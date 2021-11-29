@@ -1,0 +1,2049 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+input, button,select,option{
+    outline: none;
+}
+
+html{
+
+background-color: rgba(241, 240, 240, 0.973);
+height: fit-content;
+overflow-x: hidden;
+
+}
+
+/*HEADER*/
+header {
+    display: block;
+        position: relative;
+        width: 100%;
+        height:auto;
+        background-color:  rgba(241, 240, 240, 0.856);
+        position: relative;   
+      box-shadow: 2px 2px 5px 8px rgba(233, 232, 232, 0.61),
+                   inset 1px 1px 3px 3px rgba(238, 238, 238, 0.404),
+                    1px 1px 8px 8px rgba(223, 221, 221, 0.63);
+    
+    overflow: hidden;
+      
+       z-index: 5; /*By giving this z index the mouse gives priority to header first. Otherwise the area of submenu and 
+       subbody has conflict and selection is not proper. */
+    }
+    
+    header  .innerheader{
+        width: 100%;
+        height: 70px;
+        display: flow-root;
+    /*border: 1px solid yellow; */
+    
+    }
+    
+    header  .innerheader .logo{
+        position: relative;
+        float: left;
+        width: 15%; 
+        height: calc(100% - 5px);
+    
+       /* border: 1px solid yellow; */
+    
+    }
+    
+    header  .innerheader .logo a span{
+        display: block;
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
+        text-align: center;
+        font-size: 55px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(27, 6, 6);
+        font-family:'Bauhaus 93';
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color:  rgba(231, 231, 231, 0.623);
+        padding-bottom: 3px;
+        border: 0.5px solid rgba(238, 238, 236, 0.651);
+    
+    
+    }
+    
+    header  .innerheader .headerempty{
+        width: 2%;
+         margin-right: 20px;
+        /*border: 1px solid green;  */
+        float: right;
+        height: 100%;
+    }
+    header  .innerheader nav{
+    width: fit-content;
+      /* border: 1px solid red ;    */
+        float: right;
+        margin-top: 20px;
+    }
+    header  .innerheader nav .menu{
+        width: fit-content;
+        height: 100%;
+        float: left;
+    
+    }
+    header  .innerheader nav .menu div{
+        display: inline-block;
+        height: 100%;
+    
+        
+    
+    }
+    
+    header  .innerheader nav .menu div a{
+        color: rgb(39, 22, 22);
+        font-size: 21px;
+        font-weight: 500;
+        font-family: 'Mukta', sans-serif;
+        text-transform: uppercase;
+        margin-right: 12px;
+        text-align: center;
+        padding: 1.5px;
+    
+    }
+    
+    header  .innerheader nav .menu .home a{
+        font-weight: 800;
+    
+    }
+    
+    
+    header  .innerheader nav .menu .login .fa{
+        font-size: 20px;
+        padding-right: 3px;
+        color: rgb(36, 10, 10);
+    
+       
+    }
+    
+    /*deal of the day*/
+    
+    header  .innerheader nav .menu div a h1{
+        display: inline-block;
+        animation: deal 1.75s linear infinite ;
+        color: crimson;
+        font-size: 21px;
+        font-weight: 500;
+        font-family: 'Mukta', sans-serif;
+        text-transform: uppercase;
+        padding-right: 1.5px;
+    
+    
+    
+    }
+    
+    header  .innerheader nav .menu div:hover a,
+    header  .innerheader nav .menu .deal:hover a h1 span{
+    
+        font-weight: 600;
+    }
+    
+    header  .innerheader nav .menu div a:hover {
+       /* background-color: rgba(231, 228, 228, 0.897);
+        border-radius: 10px; */
+        border-bottom: 2px solid rgb(243, 188, 85);
+    }
+    
+    header  .innerheader nav .menu .deal a h1 span{
+        display: inline;
+    
+    }
+     
+    header  .innerheader nav .menu .icons{
+        margin-left: 10px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 22px;
+        padding-top: 5px;
+    
+    }
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+        display: none;  /*making it visible in small screen*/
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 24px;
+        padding-top: 4px;
+        color: rgb(36, 34, 34);
+    
+    }
+    
+    header  .innerheader nav .menu .deal a h1:nth-of-type(1){
+    
+        animation-delay: 0s;
+        
+    
+    
+    }
+    
+    header  .innerheader nav .menu .deal a h1:nth-of-type(2){
+    
+        animation-delay: 0.5s; 
+    
+    
+    
+    }
+    header  .innerheader nav .menu .deal a h1:nth-of-type(3){
+    
+        animation-delay: 1s;
+    
+    }
+    
+    
+    header  .innerheader nav .menu .deal a h1:nth-of-type(4){
+    
+        animation-delay: 1.5s;
+    
+    
+    
+    }
+    header  .innerheader nav .menu .deal a h1:nth-of-type(5){
+    
+        animation-delay: 2s;
+    }
+    
+    
+    @keyframes deal{
+    
+    0% {
+        color: rgb(231, 17, 106);
+    
+    
+    }
+    
+    10% {
+        color:rgb(209, 62, 123);
+    
+    
+    }20% {
+        color:rgb(156, 55, 156);
+    
+    
+    }30% {
+        color:rgb(145, 47, 145);
+    
+    
+    }
+    
+    40% {
+      
+        color:rgb(142, 28, 223);
+    
+    
+    }
+    50% {
+       
+        color: rgb(93, 14, 150);
+    
+    
+    }
+    60% {
+       
+        color: rgb(236, 40, 105);
+    }
+    70% {
+        
+        color:  rgb(189, 68, 108);
+    
+    
+    }
+    80% {
+        
+        color: rgb(243, 243, 128);
+    
+    
+    }
+    85% {
+        
+        color: rgb(230, 87, 51);
+    
+    
+    }
+    
+    95% {
+       
+        color: rgb(236, 78, 4);
+    
+    
+    }
+    100% {
+      
+        color: rgb(216, 38, 38);
+    }
+    
+    
+    }
+    
+    
+    @media screen and (max-width: 1410px) {
+      
+        header  .innerheader .logo{
+            width: 15%;
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 50px; 
+            padding-top: 0px;
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 15px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 18px;
+            float: right;
+            margin-right: 9px;
+    
+        }
+        
+        
+        header  .innerheader nav .menu div a{
+            font-size: 20px;
+            margin-right: 7px;
+            padding: 1px;
+        
+    
+        }
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 20px;  
+            padding-right: 1px;   
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none; 
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 20px;
+            padding-right: 2.5px;
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 20px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 22px;
+            padding-top: 4px;
+        
+        }
+       
+    }
+    
+    @media screen and (max-width: 1200px) {
+      
+        header  .innerheader .logo{
+            width: 12%;
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 45px; 
+            padding-top: 1px;  
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 15px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 18px;
+            float: right;
+            margin-right: 10px;
+    
+        }
+        
+        
+        header  .innerheader nav .menu div a{
+            font-size: 19px;
+            margin-right: 8px;
+            padding: 1px;
+        
+    
+        }
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 19px;  
+            padding-right: 1px;   
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 19px;
+            padding-right: 2.5px;
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 18px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 20px;
+            padding-top: 4px;
+        
+        }
+    
+    
+     
+    }
+    
+    @media only screen and (max-width: 1015px) {
+      
+        header  .innerheader .logo{
+            width: 12%;
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 42px; 
+            padding-top: 2px;  
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 15px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 18px;
+            margin-right: 5px;
+            padding: 1px;
+        
+    
+        }
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 18px;  
+            padding-right: 1px;   
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 18px;
+            padding-right: 2.5px;
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 18px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 20px;
+            padding-top: 4px;
+        
+        }
+    
+        
+        
+        }
+    
+    @media only screen and (max-width: 945px) {
+      
+        header  .innerheader .logo{
+            width: 10%;
+            height: calc(100% - 0px);
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 40px; 
+            padding-top: 3px;  
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 20px;
+           
+        }
+        header  .innerheader nav{
+            height: calc(100% - 20px);
+            margin-top: 20px;
+            margin-right: 10px;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 16px;
+            margin-right: 5px;
+            padding: 1px;
+        
+    
+        }
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 16px;  
+            padding-right: 1px;   
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 17px;
+            padding-right: 2.5px;
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 18px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 20px;
+            padding-top: 4px;
+        
+        }
+    
+        /*SIDEBAR BTN*/
+        header  .innerheader .sidebartbtn{
+            width: 8px;
+            height: 8px;
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-top: 0px;
+            overflow: hidden;
+        
+        }
+        
+        header  .innerheader .sidebartbtn:hover{
+        
+            width: 10px;
+            height: 10px;
+            margin-left: 4px;
+        }
+        header  .innerheader .sidebartbtn .p {
+          
+            padding-top: 5px;
+            padding-left: 3px;
+        
+        }
+        
+        header  .innerheader .sidebartbtn .p p{
+            width: 80%;
+            height: 5px;
+            margin-bottom: 4px;
+        }
+        
+        
+       
+    }
+    
+    @media only screen and (max-width: 846px) {
+      
+       
+    
+        header  .innerheader .logo{
+            width: 8%;
+            height: calc(100% - 0px);
+            
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 28px; 
+            padding-top: 12px;
+    
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 15px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 20px;
+            margin-right: 12px;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 14px;
+            margin-right: 3px;
+            padding: 1px;
+            font-weight: 500;
+        
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 14px;  
+            font-weight: 500;
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 15px;
+    
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 1.5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 15px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 16px;
+            padding-top: 4px;
+        
+        }
+    
+        
+        
+       
+    }
+    
+    @media only screen and (max-width: 715px) {
+      
+        header  .innerheader{
+    
+            height: 60px;
+        }
+    
+        header  .innerheader .logo{
+            width: 7.5%;
+            height: calc(100% - 0px);
+            
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 24px; 
+            padding-top: 12px;
+    
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 12px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 18px;
+            margin-right: 10px;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 12px;
+            margin-right: 3px;
+            padding: 1px;
+            font-weight: 500;
+        
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 12px;  
+            font-weight: 500;
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 13px; 
+            padding-right: 0px;
+    
+    
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 1.2px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 13px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 15px;
+            padding-top: 4px;
+        
+        }
+    
+        
+        
+       
+    }
+    
+    @media only screen and (max-width: 628px) {
+      
+        header  .innerheader {
+            height: 55px;
+        }
+    
+        header  .innerheader .logo{
+            width: 7%;
+            height: calc(100% - 0px);
+            
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 22px; 
+            padding-top: 10px;
+    
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 12px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 17px;
+            margin-right: 12px;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 12px;
+            margin-right: 1.5px;
+            padding: 1px;
+        
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 12px;  
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store,
+        header  .innerheader nav .menu .login .logintxt{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 13px;
+    
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 0.8px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 13px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 14px;
+            padding-top: 4px;
+        
+        }    
+       
+    }
+    
+    @media only screen and (max-width: 570px) {
+      
+        
+    
+        header  .innerheader .logo{
+            width: 7%;
+            height: calc(100% - 0px);
+            
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 20px; 
+            padding-top: 10px;
+    
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 12px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 15px;
+            margin-right: 8px;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 11px;
+            margin-right: 1.5px;
+            padding: 1px;
+        
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 11px;  
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store,
+        header  .innerheader nav .menu .login .logintxt{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 13px;
+    
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 0.8px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 13px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 14px;
+            padding-top: 4px;
+        
+        }    
+       
+    }
+    
+    @media only screen and (max-width: 528px) {
+      
+        header  .innerheader {
+            height: 50px;
+        }
+    
+        header  .innerheader .logo{
+            width: 7%;
+            height: calc(100% - 0px);
+            
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 18px; 
+            padding-top: 10px;
+    
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 12px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 12px;
+            margin-right: 8px;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 9px;
+            margin-right: 1.5px;
+            padding: 1px;
+        
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 9px;  
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store,
+        header  .innerheader nav .menu .login .logintxt{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 11px;
+    
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 0.8px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 11px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 13px;
+            padding-top: 4px;
+        
+        }    
+       
+    }
+    
+    
+    @media only screen and (max-width: 458px) {
+      
+        header .innerheader{
+            height: 40px;
+    
+        }
+    
+        header  .innerheader .logo{
+            display: inline-block;
+            width: 6.5%;
+            height: calc(100% - 0px);
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 14px; 
+            display: block;
+            padding-top: 10px;
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 8px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 8px;
+            height: auto;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 10px;
+            margin-right: 1.5px;
+            padding: 1px;
+            font-weight: 600;
+        
+        }
+    
+        header  .innerheader nav .menu div .logintxt,
+        #wedding{
+            display: none;
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 10px;  
+            padding-right: 1px; 
+            font-weight: 600;
+      
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 12px;
+            margin-left: 2px;
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 1.5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 13px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 8px;
+            padding-top: 4px;
+        
+        }   
+          
+    }
+    
+    @media only screen and (max-width: 375px) {
+      
+        header .innerheader{
+            height: 40px;
+    
+        }
+    
+        header  .innerheader .logo{
+            display: inline-block;
+            width: 6.5%;
+            height: calc(100% - 0px);
+       
+            
+    
+    
+        }
+        header  .innerheader .logo a span{
+            font-size: 14px; 
+            display: block;
+            padding-top: 10px;
+    
+    
+        }
+        
+        header  .innerheader .headerempty{
+            width: 0%;
+             margin-right: 5px;
+           
+        }
+        header  .innerheader nav{
+            margin-top: 9px;
+            height: auto;
+    
+        }
+       
+        
+        header  .innerheader nav .menu div a{
+            font-size: 9px;
+            margin-right: 1px;
+            padding: 1px;
+            font-weight: 600;
+        
+        }
+    
+        header  .innerheader nav .menu div .logintxt,
+        #wedding{
+            display: none;
+        }
+    
+         /*deal of the day*/
+        header  .innerheader nav .menu div a h1{
+            
+            font-size: 9px;  
+            padding-right: 0.6px; 
+            font-weight: 600;
+      
+        }
+        
+        /*Store locator*/ 
+        header  .innerheader nav .menu .store{
+            display: none;
+        }
+        header  .innerheader nav .menu .login .fa{
+            font-size: 10px;
+            margin-left: 2px;
+        
+           
+        }
+    
+        header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+            display: inline-block;  /*making it visible in small screen*/
+        }
+       
+        
+        header  .innerheader nav .menu .icons{
+            margin-left: 1.5px; 
+           /* border: 1px solid orange;  */
+        }
+        
+        header  .innerheader nav .menu .icons a .fa{
+            font-size: 10px;
+            padding-top: 5px;
+        
+        }
+        
+        header  .innerheader nav .menu .icons a .fa:hover{
+            font-size: 8px;
+            padding-top: 4px;
+        
+        }
+    
+        
+        
+       
+    }
+    
+    
+    
+    
+    /*SUB MENU*/
+    
+    .sub_catalogue{
+        display: none;  
+        /*display: flow-root;  */
+        width: calc(100% - 100px);
+        height: fit-content;
+        position: absolute;
+        top: 78px;
+        left: 55px;
+       /* border: 1px solid red; */
+        z-index: 11;
+        background-color: rgba(238, 236, 236, 0.863);
+        cursor: pointer;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .sub_catalogue .left{
+        float: left;
+        width: calc(70% - 30px);
+        height: 100%;
+        margin-left: 20px;
+       /* border: 1px solid blue; */
+    
+    }
+    
+    .sub_catalogue .left .sub_menu{
+        height: 100%;
+        width: calc(33% - 20px);
+       /* border: 1px solid violet; */
+        float: left;
+        padding-bottom: 10px;
+    }
+    
+    
+    .sub_catalogue .left .sub_menu h1{
+        text-align: left;
+        font-size: 28px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-family: 'Mukta', sans-serif;
+        color: rgb(41, 7, 7);
+        text-shadow: 0 0 3px rgba(87, 80, 80, 0.527);
+    }
+    .sub_catalogue .left .sub_menu p{
+        padding-left: 20px;
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Mukta', sans-serif;
+        color: rgb(29, 26, 26);
+        padding-bottom: 0px;
+        text-transform: capitalize;
+    
+    }
+    
+    .sub_catalogue .left .sub_menu p:hover{
+        font-weight: bold;
+        color: rgb(42, 46, 15);
+    }
+    
+    
+    .sub_catalogue .right{
+        float: left;
+        width: calc(30% - 0px);
+        height: 100%;
+      /*  border: 1px solid indianred; */
+    
+    }
+    .sub_catalogue .right img{
+        width: calc(100% - 20px);
+        height: calc(80% - 20px);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    /*SUB MEN*/
+    .sub_men{
+        display: none;  
+        /*display: flow-root;  */
+        width: calc(100% - 100px);
+        height: 400px;
+        position: absolute;
+        top: 78px;
+        left: 55px;
+       /* border: 1px solid red; */
+        z-index: 11;
+        background-color: rgba(238, 236, 236, 0.863);
+        cursor: pointer;
+        padding-bottom: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .sub_men .sub_menu1{
+        width: calc(25% - 10px);
+        height: 100%;
+       /* border: 1px solid red; */
+        float: left;
+        margin-right: 5px;
+    
+    
+    }
+    
+    .sub_men .sub_menu1 h1{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-family: 'Mukta', sans-serif;
+        color: rgb(71, 14, 14);
+        text-shadow: 0 0 3px rgba(87, 80, 80, 0.527);
+    
+    
+    }
+    .sub_men .sub_menu1 a img{
+        display: block;
+        width: calc(100% - 20px);
+        height: 320px;
+        margin: 10px;
+        border-radius: 10px;
+       /* border: 1px solid violet; */
+    }
+    
+    .sub_men .sub_menu1 a img:hover{
+        width: calc(100% - 16px);
+        height: 324px;
+        margin: 8px;
+    }
+    
+    
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+        position: relative;  
+        float: right;
+       
+        background-color: rgb(233, 233, 233);
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 3px 3px 3px rgba(189, 188, 188, 0.671);
+        width: 43px;
+        height: 43px;
+        margin-left: 8px;
+        margin-right: 30px;
+        margin-top: 12px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 45px;
+        height: 45px;
+        margin-left: 6.5px;
+    
+    
+    
+    
+    }
+    header  .innerheader .sidebartbtn .p {
+        width: 100%;
+        height:calc(100% - 10px) ; 
+        padding-top: 10px;
+        padding-left: 3px;
+    
+    
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        background-color: rgb(22, 22, 22);
+        width: 80%;
+        height: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-radius: 8px;
+        padding-left: 3px;
+        transition: all 0.1s linear;
+    }
+    
+    /*During the transition it will be cross  */
+    header  .innerheader .sidebartbtn .p .bar1{
+    
+    transform: rotate(-135deg) translate(-13px , 11px);
+    width: 50%;    
+    
+    
+    }
+    header  .innerheader .sidebartbtn .p .bar2{
+    
+        opacity: 1;
+    
+    }
+    header  .innerheader .sidebartbtn .p .bar3{
+    
+        transform: rotate(-45deg) translate(15px , 9px);
+        width: 50%;
+    
+    }
+    
+    @media screen and (max-width: 1200px) {
+        /*SIDEBAR BTN*/
+        header  .innerheader .sidebartbtn{
+           
+            width: 38px;
+            height: 38px;
+            margin-left: 5px;
+            margin-right:15px;
+            margin-top: 10px;
+        
+        }
+        
+        header  .innerheader .sidebartbtn:hover{
+        
+            width: 40px;
+            height: 40px;
+            margin-left: 4px;   
+        }
+    
+        header  .innerheader .sidebartbtn .p {
+          
+            padding-top: 10px;
+            padding-left: 3px;
+        
+        }
+        
+        header  .innerheader .sidebartbtn .p p{
+            width: 80%;
+            height: 4px;
+            margin-bottom: 4px;
+        }
+        header  .innerheader .sidebartbtn .p .bar2{
+            transform: translateX(2.5px);
+            width: 70%;
+        }
+    
+    header  .innerheader .sidebartbtn .p .bar3{
+                
+     transform: rotate(-45deg) translate(13.5px , 12px);
+     width: 40%;
+                
+                }
+    
+    }
+    @media screen and (max-width: 1000px) {
+     /*SIDEBAR BTN*/
+     header  .innerheader .sidebartbtn{
+           
+        width: 38px;
+        height: 38px;
+        margin-left: 3px;
+        margin-right: 15px;
+        margin-top: 12px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    header  .innerheader .sidebartbtn .p {
+          
+        padding-top: 10px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    
+    header  .innerheader .sidebartbtn .p .bar2{
+                transform: translateX(2.5px);
+                width: 70%;
+            }
+    
+    header  .innerheader .sidebartbtn .p .bar3{
+                    
+         transform: rotate(-45deg) translate(13.5px , 12px);
+         width: 40%;
+                    
+                    }
+    
+    }
+    
+    
+    @media screen and (max-width: 830px) {
+         /*SIDEBAR BTN*/
+         header  .innerheader .sidebartbtn{
+            width: 35px;
+            height: 35px;
+            margin-left: 5px;
+            margin-right: 10px;
+            margin-top: 15px;
+            overflow: hidden;
+        
+        }
+        
+        header  .innerheader .sidebartbtn:hover{
+        
+            width: 38px;
+            height: 38px;
+            margin-left: 4px;
+        }
+        header  .innerheader .sidebartbtn .p {
+          
+            padding-top: 8px;
+            padding-left: 3px;
+        
+        }
+        
+        header  .innerheader .sidebartbtn .p p{
+            width: 80%;
+            height: 4px;
+            margin-bottom: 4px;
+        }
+        
+    }
+    
+    @media screen and (max-width: 710px) {
+        /*SIDEBAR BTN*/
+        header  .innerheader .sidebartbtn{
+           width: 35px;
+           height: 35px;
+           margin-left: 5px;
+           margin-right: 10px;
+           margin-top: 11px;
+           overflow: hidden;
+       
+       }
+       
+       header  .innerheader .sidebartbtn:hover{
+       
+           width: 38px;
+           height: 38px;
+           margin-left: 4px;
+       }
+       header  .innerheader .sidebartbtn .p {
+         
+           padding-top: 8px;
+           padding-left: 3px;
+       
+       }
+       
+       header  .innerheader .sidebartbtn .p p{
+           width: 80%;
+           height: 4px;
+           margin-bottom: 4px;
+       }
+       
+    }
+    
+    @media screen and (max-width: 500px) {
+        /*SIDEBAR BTN*/
+        header  .innerheader .sidebartbtn{
+           width: 32px;
+           height: 30px;
+           margin-left: 2px;
+           margin-right: 4px;
+           margin-top: 5px;
+          overflow: hidden; 
+       
+       }
+       
+       header  .innerheader .sidebartbtn:hover{
+       
+           width: 30px;
+           height: 30px;
+           margin-left: 1.5px;
+       }
+       header  .innerheader .sidebartbtn .p {
+          
+        padding-top: 5px;
+        padding-left: 1.5px;
+        padding-right: 1.5px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 3.5px;
+        margin-bottom: 2px;
+        margin-top: 2.6px;
+    }
+    header  .innerheader .sidebartbtn .p .bar1{
+    
+        transform: rotate(-135deg) translate(-8.5px , 9px);
+        width: 40%;    
+        
+        
+        }
+    header  .innerheader .sidebartbtn .p .bar2{
+    transform: translateX(2.5px);
+    width: 70%;
+        }
+    
+    header  .innerheader .sidebartbtn .p .bar3{
+        
+            transform: rotate(-45deg) translate(8.5px , 8.5px);
+            width: 40%;
+        
+        }
+    }
+    @media screen and (max-width: 400px) {
+         /*SIDEBAR BTN*/
+         header  .innerheader .sidebartbtn{
+            width: 28px;
+            height: 28px;
+            margin-left: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+           overflow: hidden; 
+        
+        }
+        
+        header  .innerheader .sidebartbtn:hover{
+        
+            width: 30px;
+            height: 30px;
+            margin-left: 1.5px;
+        }
+        header  .innerheader .sidebartbtn .p {
+          
+            padding-top: 4px;
+            padding-left: 1.5px;
+            padding-right: 1.5px;
+        
+        }
+        
+        header  .innerheader .sidebartbtn .p p{
+            width: 80%;
+            height: 3.5px;
+            margin-bottom: 2px;
+            margin-top: 2.6px;
+        }
+        header  .innerheader .sidebartbtn .p .bar1{
+    
+            transform: rotate(-135deg) translate(-8.5px , 9px);
+            width: 40%;    
+            
+            
+            }
+    header  .innerheader .sidebartbtn .p .bar2{
+        transform: translateX(2.5px);
+        width: 70%;
+            }
+    
+     header  .innerheader .sidebartbtn .p .bar3{
+            
+                transform: rotate(-45deg) translate(8.5px , 8.5px);
+                width: 40%;
+            
+            }
+    }
+    
+    
+    
+    
+     /*LOGIN BOX*/
+    
+    
+    /*LOGIN Pop up page*/
+    
+    .loginbox{
+        display: none;
+        z-index: 10;
+        border: none;
+        box-shadow: 2px 2px 2px 5px rgba(211, 208, 208, 0.719);
+        width: 900px;
+        height: 500px;
+      position: absolute;
+      left:25%; top: 100px;
+      /*margin: 50px auto; */
+        border-radius: 10px;
+        background-color: rgba(243, 244, 245, 0.712); 
+        animation: login 0.3s linear;
+        transition: all linear;
+    
+    }
+    
+    @keyframes login{
+        from{ transform: scale(0);
+        opacity: 0;}
+        to{transform: scale(1);
+        opacity: 1;}
+    }
+    
+    .loginbox .close{
+        position: absolute;
+        top: 10px;  right: 10px;
+        font-size: 30px;
+        color:white;
+        z-index: 1;
+       /* border: 2px solid violet;*/
+    
+    }
+    
+    .loginbox .close:hover{
+        color: rgb(41, 14, 2);
+        font-size: 33px;
+        top:8px; 
+    
+    
+    }
+    .loginbox .signin {
+    position: absolute;
+    width: calc(50% - 20px);
+    height: 100%;
+    display: inline-block;
+    /*border: 1px solid green;*/
+    
+    
+    }
+    
+    .loginbox .signin h1{
+    
+     text-transform: uppercase;
+     font-family: 'Signika', sans-serif;
+         font-weight: 700;
+        font-size: 55px;
+        color: rgb(83, 18, 18);
+        text-align: center;
+        margin-top: 45px;
+        width: 99%;
+        height: fit-content;
+        flex-wrap: nowrap;
+     display: block;
+      /*  border: 2px solid violet;*/
+    
+    }
+    
+    .loginbox .signin .links{
+        display: block;
+        position: relative;
+       /* border: 2px solid blue; */
+        height: fit-content;
+        width: 100%;
+    
+        margin-top: 10px;
+    text-align: center;
+    
+    
+    }
+    
+    .loginbox .signin .links div{
+    
+        display: inline-block;
+        height: 60px;
+        width: 70px;
+        margin-right:15px ;
+        background-color: rgb(243, 243, 243);
+        box-shadow: 2px 1px 0px 1px grey,
+                    2px 1px 0px 1px grey,
+                    inset 1px 1px 2px 1px rgb(199, 199, 199),
+                    1px 1px 0px 1px grey;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    
+    }
+    
+    .loginbox .signin .links div:hover {
+    
+        background-color: rgb(223, 222, 222);
+        height: 62px;
+        width: 72px;
+        margin-right:14px ;
+    
+    
+    
+    }
+    .loginbox .signin .links div .fa{
+    
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 8px;
+    color: rgb(214, 16, 16);
+    
+    }
+    
+    .loginbox .signin .links div .fa-facebook{
+        padding-left: 5px;
+        color: blue;
+    
+    }
+    
+    .loginbox .signin .links div .fa-linkedin{
+            color: rgb(34, 34, 73);
+        }
+    
+    
+    
+    
+    
+    .loginbox .signin form{
+    
+        position: relative;
+        margin-top: 20px;
+        height: fit-content;
+      /*  border: 1px solid black;  */
+    }
+    
+    .loginbox .signin form label{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: 'Archivo Narrow', sans-serif;
+        display: block;
+        color: rgb(31, 30, 30);
+        margin-bottom: 5px;
+    
+        
+    }
+    .loginbox .signin form input{
+        color: grey;
+        width: 85%;
+        height: 35px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        font-size: 20px;
+        font-family: 'Archivo Narrow', sans-serif;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+        inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+        0 5px 5px rgba(5, 5, 5, 0.521);
+    }
+    
+      
+    .loginbox .signin form input:focus{
+            outline: none;
+      }
+    
+    .loginbox .signin form  .fa{
+    
+        position: absolute; 
+        font-size: 22px;
+        transform: translate(-30px , 12px);
+      }
+    
+      .loginbox .signin form  .fa:hover{
+    
+        font-size: 24px;
+        transform: translate(-32px , 11px);
+      }
+    .loginbox .signin form button{
+    
+        display: block;
+      }
+    
+    .loginbox .signin form button:focus{
+            outline: none;
+    
+     }
+    
+     .loginbox .signin h5{
+    
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(75, 74, 74);
+        padding-top: 10px;
+     }
+     .loginbox .signin .remember {
+         display: block;
+         width: 100%;
+        /* border: 1px solid blue;*/
+    
+     }
+    
+     .loginbox .signin .remember input{
+         width: 18px;
+         height: 16px;
+         box-shadow: none;
+         display: inline-block;
+     }
+    
+    
+     .loginbox .signin .remember p{
+        flex-wrap: nowrap;
+        font-size: 20px;
+        display: inline-block;
+        font-family: 'Signika', sans-serif;
+        color: rgb(109, 108, 108);
+    
+    
+    }
+    
+    .loginbox .signin button{
+    
+        width: 45%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        margin: 0 auto;
+        background-color: rgba(238, 27, 80, 0.904);
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-bottom: 5px ;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .loginbox .signin button  span{
+    
+        width: 100%;
+        height: 100%;
+    }
+    
+    .loginbox .signin button span::after{
+        content: '\00bb';
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+        color: white;
+        font-size: 46px;
+        top:-12px;
+        right: 25px;
+        transition: 0.5s;
+    
+    }
+    .loginbox .signin button:hover{
+        background-color: rgba(233, 17, 71, 0.904);
+    
+    }
+    
+    .loginbox .signin button:hover span::after{
+        opacity: 1;
+        color: white;
+    }
+    
+    .loginbox .signin button:hover span{
+        padding-left: 0px;
+        font-size: 27px;
+    
+    }
+    
+    .loginbox .signin .forgot{
+    
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 600;
+        color: rgb(42, 42, 196);
+    }
+    
+    .loginbox .signup{
+    
+            width: calc(50% + 10px);
+            height: 100%;
+            position: absolute; right: 0em;
+          /*  border: 1px solid orange;*/
+           display: inline-block;
+           background-color: rgba(241, 30, 65, 0.801);
+           border-bottom-right-radius: 10px;
+           border-top-right-radius: 10px;
+           
+     }
+    
+     .loginbox .signup h2{
+        font-family: 'Signika', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding-top: 100px;
+     }
+    
+     .loginbox .signup h3{
+        font-family: sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 5px 20px;
+        font-weight: 500;
+     }
+    
+     .loginbox .signup span{
+        padding-left:8px;
+     }
+    
+    
+     
+     .loginbox .signup button{
+         display: block;
+         width: 200px;
+         height: 40px;
+         background-color: transparent;
+         border: 2.5px solid rgba(230, 220, 220, 0.767);
+         border-radius: 10px;
+         margin: 25px auto;
+         font-size: 20px;
+         color: rgb(236, 222, 222);
+     }
+    
+     .loginbox .signup button:hover{
+    
+        width: 202px;
+        height: 42px;
+        background-color:rgba(241, 30, 65, 0.801);
+        margin: 24px auto;
+    
+     }
+    
+     .loginbox .signup button:focus{
+         outline: none;
+     }

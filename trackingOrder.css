@@ -1,0 +1,2998 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+/*  To remove the arrows from input = number
+
+Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input, button,select,option{
+    outline: none;
+}
+
+html{
+
+background-color: rgba(240, 240, 240, 0.877);
+overflow-x: hidden;
+
+}
+
+
+/*HEADER*/
+header {
+    display: block;
+        position: relative;
+        width: 100%;
+        height:auto;
+        background-color:  rgba(241, 240, 240, 0.856);
+        position: relative;   
+      box-shadow: 2px 2px 5px 8px rgba(233, 232, 232, 0.61),
+                   inset 1px 1px 3px 3px rgba(238, 238, 238, 0.404),
+                    1px 1px 8px 8px rgba(223, 221, 221, 0.63);
+    
+    overflow: hidden;
+      
+       z-index: 5; /*By giving this z index the mouse gives priority to header first. Otherwise the area of submenu and 
+       subbody has conflict and selection is not proper. */
+    }
+    
+    header  .innerheader{
+        width: 100%;
+        height: 70px;
+        display: flow-root;
+    /*border: 1px solid yellow; */
+    
+    }
+    
+    header  .innerheader .logo{
+        position: relative;
+        float: left;
+        width: 15%; 
+        height: calc(100% - 5px);
+    
+       /* border: 1px solid yellow; */
+    
+    }
+    
+    header  .innerheader .logo a span{
+        display: block;
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
+        text-align: center;
+        font-size: 55px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(27, 6, 6);
+        font-family:'Bauhaus 93';
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color:  rgba(231, 231, 231, 0.623);
+        padding-bottom: 3px;
+        border: 0.5px solid rgba(238, 238, 236, 0.651);
+    
+    
+    }
+    
+    header  .innerheader .headerempty{
+        width: 2%;
+         margin-right: 20px;
+        /*border: 1px solid green;  */
+        float: right;
+        height: 100%;
+    }
+    header  .innerheader nav{
+    width: fit-content;
+      /* border: 1px solid red ;    */
+        float: right;
+        margin-top: 20px;
+    }
+    header  .innerheader nav .menu{
+        width: fit-content;
+        height: 100%;
+        float: left;
+    
+    }
+    header  .innerheader nav .menu div{
+        display: inline-block;
+        height: 100%;
+    
+        
+    
+    }
+    
+    header  .innerheader nav .menu div a{
+        color: rgb(39, 22, 22);
+        font-size: 21px;
+        font-weight: 500;
+        font-family: 'Mukta', sans-serif;
+        text-transform: uppercase;
+        margin-right: 12px;
+        text-align: center;
+        padding: 1.5px;
+    
+    }
+    
+    header  .innerheader nav .menu .home a{
+        font-weight: 800;
+    
+    }
+    
+    
+    /*deal of the day*/
+    
+    header  .innerheader nav .menu div a h1{
+        display: inline-block;
+        animation: deal 1.75s linear infinite ;
+        color: crimson;
+        font-size: 21px;
+        font-weight: 500;
+        font-family: 'Mukta', sans-serif;
+        text-transform: uppercase;
+        padding-right: 1.5px;
+    
+    
+    
+    }
+    
+    header  .innerheader nav .menu div:hover a,
+    header  .innerheader nav .menu .deal:hover a h1 span{
+    
+        font-weight: 600;
+    }
+    
+    header  .innerheader nav .menu div .underline:hover {
+       /* background-color: rgba(231, 228, 228, 0.897);
+        border-radius: 10px; */
+        border-bottom: 2px solid rgb(243, 193, 101);
+    
+    }
+    
+    header  .innerheader nav .menu .deal a h1 span{
+        display: inline;
+    
+    }
+     
+    header  .innerheader nav .menu .icons{
+        margin-left: 10px; 
+       /* border: 1px solid orange;  */
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 22px;
+        padding-top: 5px;
+    
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 20px;
+        padding-right: 0px;
+        color: rgb(36, 10, 10);
+    
+       
+    }
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+    
+        display: none;  /*making it visible in small screen*/
+    
+    }
+    
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 24px;
+        padding-top: 4px;
+        color: rgb(36, 34, 34);
+    
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .cartnum{
+    display: inline-block;
+        width: 20px;
+        background-color: rgba(241, 240, 240, 0.924);
+        color: rgb(36, 34, 34);
+        border: 0.5px solid rgba(194, 194, 194, 0.808);
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 0.5px 0px;
+        text-align:center ;
+        transform: translateY(-1px);
+    
+    }
+    header  .innerheader nav .menu .icons a .cartnum:hover{
+        width: 21px;
+        font-size: 16px;
+    
+    }
+    
+    
+    
+    header  .innerheader nav .menu .deal a h1:nth-of-type(1){
+    
+        animation-delay: 0s;
+        
+    
+    
+    }
+    
+    header  .innerheader nav .menu .deal a h1:nth-of-type(2){
+    
+        animation-delay: 0.5s; 
+    
+    
+    
+    }
+    header  .innerheader nav .menu .deal a h1:nth-of-type(3){
+    
+        animation-delay: 1s;
+    
+    }
+    
+    
+    header  .innerheader nav .menu .deal a h1:nth-of-type(4){
+    
+        animation-delay: 1.5s;
+    
+    
+    
+    }
+    header  .innerheader nav .menu .deal a h1:nth-of-type(5){
+    
+        animation-delay: 2s;
+    }
+    
+
+
+@keyframes deal{
+
+0% {
+    color: rgb(231, 17, 106);
+
+
+}
+
+10% {
+    color:rgb(209, 62, 123);
+
+
+}20% {
+    color:rgb(156, 55, 156);
+
+
+}30% {
+    color:rgb(145, 47, 145);
+
+
+}
+
+40% {
+  
+    color:rgb(142, 28, 223);
+
+
+}
+50% {
+   
+    color: rgb(93, 14, 150);
+
+
+}
+60% {
+   
+    color: rgb(236, 40, 105);
+}
+70% {
+    
+    color:  rgb(189, 68, 108);
+
+
+}
+80% {
+    
+    color: rgb(243, 243, 128);
+
+
+}
+85% {
+    
+    color: rgb(230, 87, 51);
+
+
+}
+
+95% {
+   
+    color: rgb(236, 78, 4);
+
+
+}
+100% {
+  
+    color: rgb(216, 38, 38);
+}
+
+
+}
+
+
+@media screen and (max-width: 1410px) {
+  
+    header  .innerheader .logo{
+        width: 15%;
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 50px; 
+        padding-top: 0px;
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 18px;
+        float: right;
+        margin-right: 9px;
+
+    }
+    
+    
+    header  .innerheader nav .menu div a{
+        font-size: 20px;
+        margin-right: 7px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 20px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none; 
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 20px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 20px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 22px;
+        padding-top: 4px;
+    
+    }
+   
+}
+
+@media screen and (max-width: 1200px) {
+  
+    header  .innerheader .logo{
+        width: 12%;
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 45px; 
+        padding-top: 1px;  
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 18px;
+        float: right;
+        margin-right: 10px;
+
+    }
+    
+    
+    header  .innerheader nav .menu div a{
+        font-size: 19px;
+        margin-right: 8px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 19px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 19px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 18px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 20px;
+        padding-top: 4px;
+    
+    }
+
+
+ 
+}
+
+@media only screen and (max-width: 1015px) {
+  
+    header  .innerheader .logo{
+        width: 12%;
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 42px; 
+        padding-top: 2px;  
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 18px;
+        margin-right: 5px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 18px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 18px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 18px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 20px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+    }
+
+@media only screen and (max-width: 945px) {
+  
+    header  .innerheader .logo{
+        width: 10%;
+        height: calc(100% - 0px);
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 40px; 
+        padding-top: 3px;  
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 20px;
+       
+    }
+    header  .innerheader nav{
+        height: calc(100% - 20px);
+        margin-top: 20px;
+        margin-right: 10px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 16px;
+        margin-right: 5px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 16px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 17px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 18px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 20px;
+        padding-top: 4px;
+    
+    }
+
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+        width: 8px;
+        height: 8px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 0px;
+        overflow: hidden;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+    }
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 5px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 5px;
+        margin-bottom: 4px;
+    }
+    
+    
+   
+}
+
+@media only screen and (max-width: 846px) {
+  
+   
+
+    header  .innerheader .logo{
+        width: 8%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 28px; 
+        padding-top: 12px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 20px;
+        margin-right: 12px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 14px;
+        margin-right: 3px;
+        padding: 1px;
+        font-weight: 500;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 14px;  
+        font-weight: 500;
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 15px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 15px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 16px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+   
+}
+
+@media only screen and (max-width: 715px) {
+  
+    header  .innerheader{
+
+        height: 60px;
+    }
+
+    header  .innerheader .logo{
+        width: 7.5%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 24px; 
+        padding-top: 12px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 18px;
+        margin-right: 10px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 12px;
+        margin-right: 3px;
+        padding: 1px;
+        font-weight: 500;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 12px;  
+        font-weight: 500;
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 13px; 
+        padding-right: 0px;
+
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.2px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 15px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+   
+}
+
+@media only screen and (max-width: 628px) {
+  
+    header  .innerheader {
+        height: 55px;
+    }
+
+    header  .innerheader .logo{
+        width: 7%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 22px; 
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 17px;
+        margin-right: 12px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 12px;
+        margin-right: 1.5px;
+        padding: 1px;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 12px;  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store,
+    header  .innerheader nav .menu .login .logintxt{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 13px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 0.8px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 14px;
+        padding-top: 4px;
+    
+    }    
+   
+}
+
+@media only screen and (max-width: 570px) {
+  
+    
+
+    header  .innerheader .logo{
+        width: 7%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 20px; 
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 15px;
+        margin-right: 8px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 11px;
+        margin-right: 1.5px;
+        padding: 1px;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 11px;  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store,
+    header  .innerheader nav .menu .login .logintxt{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 13px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 0.8px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 14px;
+        padding-top: 4px;
+    
+    }    
+   
+}
+
+@media only screen and (max-width: 528px) {
+  
+    header  .innerheader {
+        height: 50px;
+    }
+
+    header  .innerheader .logo{
+        width: 7%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 18px; 
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 12px;
+        margin-right: 8px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 9px;
+        margin-right: 1.5px;
+        padding: 1px;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 9px;  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store,
+    header  .innerheader nav .menu .login .logintxt{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 11px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 0.8px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 11px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 13px;
+        padding-top: 4px;
+    
+    }    
+   
+}
+
+
+@media only screen and (max-width: 458px) {
+  
+    header .innerheader{
+        height: 40px;
+
+    }
+
+    header  .innerheader .logo{
+        display: inline-block;
+        width: 6.5%;
+        height: calc(100% - 0px);
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 14px; 
+        display: block;
+        padding-top: 10px;
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 8px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 8px;
+        height: auto;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 10px;
+        margin-right: 1.5px;
+        padding: 1px;
+        font-weight: 600;
+    
+    }
+
+    header  .innerheader nav .menu div .logintxt,
+    #wedding{
+        display: none;
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 10px;  
+        padding-right: 1px; 
+        font-weight: 600;
+  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 12px;
+        margin-left: 2px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 8px;
+        padding-top: 4px;
+    
+    }   
+      
+}
+
+@media only screen and (max-width: 375px) {
+  
+    header .innerheader{
+        height: 40px;
+
+    }
+
+    header  .innerheader .logo{
+        display: inline-block;
+        width: 6.5%;
+        height: calc(100% - 0px);
+   
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 14px; 
+        display: block;
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 5px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 9px;
+        height: auto;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 9px;
+        margin-right: 1px;
+        padding: 1px;
+        font-weight: 600;
+    
+    }
+
+    header  .innerheader nav .menu div .logintxt,
+    #wedding{
+        display: none;
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 9px;  
+        padding-right: 0.6px; 
+        font-weight: 600;
+  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 10px;
+        margin-left: 2px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 10px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 8px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+   
+}
+
+
+
+
+
+/*SUB MENU*/
+
+.sub_catalogue{
+    display: none;  
+    /*display: flow-root;  */
+    width: calc(100% - 100px);
+    height: fit-content;
+    position: absolute;
+    top: 78px;
+    left: 55px;
+   /* border: 1px solid red; */
+    z-index: 11;
+    background-color: rgba(238, 236, 236, 0.863);
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+.sub_catalogue .left{
+    float: left;
+    width: calc(70% - 30px);
+    height: 100%;
+    margin-left: 20px;
+   /* border: 1px solid blue; */
+
+}
+
+.sub_catalogue .left .sub_menu{
+    height: 100%;
+    width: calc(33% - 20px);
+   /* border: 1px solid violet; */
+    float: left;
+    padding-bottom: 10px;
+}
+
+
+.sub_catalogue .left .sub_menu h1{
+    text-align: left;
+    font-size: 28px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(41, 7, 7);
+    text-shadow: 0 0 3px rgba(87, 80, 80, 0.527);
+}
+.sub_catalogue .left .sub_menu p{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(29, 26, 26);
+    padding-bottom: 0px;
+    text-transform: capitalize;
+
+}
+
+.sub_catalogue .left .sub_menu p:hover{
+    font-weight: bold;
+    color: rgb(42, 46, 15);
+}
+
+
+.sub_catalogue .right{
+    float: left;
+    width: calc(30% - 0px);
+    height: 100%;
+  /*  border: 1px solid indianred; */
+
+}
+.sub_catalogue .right img{
+    width: calc(100% - 20px);
+    height: calc(80% - 20px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*SUB MEN*/
+.sub_men{
+    display: none;  
+    /*display: flow-root;  */
+    width: calc(100% - 100px);
+    height: 400px;
+    position: absolute;
+    top: 78px;
+    left: 55px;
+   /* border: 1px solid red; */
+    z-index: 11;
+    background-color: rgba(238, 236, 236, 0.863);
+    cursor: pointer;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+.sub_men .sub_menu1{
+    width: calc(25% - 10px);
+    height: 100%;
+   /* border: 1px solid red; */
+    float: left;
+    margin-right: 5px;
+
+
+}
+
+.sub_men .sub_menu1 h1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(71, 14, 14);
+    text-shadow: 0 0 3px rgba(87, 80, 80, 0.527);
+
+
+}
+.sub_men .sub_menu1 a img{
+    display: block;
+    width: calc(100% - 20px);
+    height: 320px;
+    margin: 10px;
+    border-radius: 10px;
+   /* border: 1px solid violet; */
+}
+
+.sub_men .sub_menu1 a img:hover{
+    width: calc(100% - 16px);
+    height: 324px;
+    margin: 8px;
+}
+
+
+/*SIDEBAR BTN*/
+header  .innerheader .sidebartbtn{
+    position: relative;  
+    float: right;
+   
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(189, 188, 188, 0.671);
+    width: 43px;
+    height: 43px;
+    margin-left: 8px;
+    margin-right: 30px;
+    margin-top: 12px;
+
+}
+
+header  .innerheader .sidebartbtn:hover{
+
+    width: 45px;
+    height: 45px;
+    margin-left: 6.5px;
+
+
+
+
+}
+header  .innerheader .sidebartbtn .p {
+    width: 100%;
+    height:calc(100% - 10px) ; 
+    padding-top: 10px;
+    padding-left: 3px;
+
+
+
+}
+
+header  .innerheader .sidebartbtn .p p{
+    background-color: rgb(22, 22, 22);
+    width: 80%;
+    height: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    padding-left: 3px;
+    transition: all 0.1s linear;
+}
+
+/*During the transition it will be cross  */
+header  .innerheader .sidebartbtn .p .bar1{
+
+transform: rotate(-135deg) translate(-13px , 11px);
+width: 50%;    
+
+
+}
+header  .innerheader .sidebartbtn .p .bar2{
+
+    opacity: 1;
+
+}
+header  .innerheader .sidebartbtn .p .bar3{
+
+    transform: rotate(-45deg) translate(15px , 9px);
+    width: 50%;
+
+}
+
+@media screen and (max-width: 1200px) {
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+       
+        width: 38px;
+        height: 38px;
+        margin-left: 5px;
+        margin-right:15px;
+        margin-top: 10px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 40px;
+        height: 40px;
+        margin-left: 4px;   
+    }
+
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 10px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    header  .innerheader .sidebartbtn .p .bar2{
+        transform: translateX(2.5px);
+        width: 70%;
+    }
+
+header  .innerheader .sidebartbtn .p .bar3{
+            
+ transform: rotate(-45deg) translate(13.5px , 12px);
+ width: 40%;
+            
+            }
+
+}
+@media screen and (max-width: 1000px) {
+ /*SIDEBAR BTN*/
+ header  .innerheader .sidebartbtn{
+       
+    width: 38px;
+    height: 38px;
+    margin-left: 3px;
+    margin-right: 15px;
+    margin-top: 12px;
+
+}
+
+header  .innerheader .sidebartbtn:hover{
+
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+header  .innerheader .sidebartbtn .p {
+      
+    padding-top: 10px;
+    padding-left: 3px;
+
+}
+
+header  .innerheader .sidebartbtn .p p{
+    width: 80%;
+    height: 4px;
+    margin-bottom: 4px;
+}
+
+header  .innerheader .sidebartbtn .p .bar2{
+            transform: translateX(2.5px);
+            width: 70%;
+        }
+
+header  .innerheader .sidebartbtn .p .bar3{
+                
+     transform: rotate(-45deg) translate(13.5px , 12px);
+     width: 40%;
+                
+                }
+
+}
+
+
+@media screen and (max-width: 830px) {
+     /*SIDEBAR BTN*/
+     header  .innerheader .sidebartbtn{
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 15px;
+        overflow: hidden;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 38px;
+        height: 38px;
+        margin-left: 4px;
+    }
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 8px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    
+}
+
+@media screen and (max-width: 710px) {
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+       width: 35px;
+       height: 35px;
+       margin-left: 5px;
+       margin-right: 10px;
+       margin-top: 11px;
+       overflow: hidden;
+   
+   }
+   
+   header  .innerheader .sidebartbtn:hover{
+   
+       width: 38px;
+       height: 38px;
+       margin-left: 4px;
+   }
+   header  .innerheader .sidebartbtn .p {
+     
+       padding-top: 8px;
+       padding-left: 3px;
+   
+   }
+   
+   header  .innerheader .sidebartbtn .p p{
+       width: 80%;
+       height: 4px;
+       margin-bottom: 4px;
+   }
+   
+}
+
+@media screen and (max-width: 500px) {
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+       width: 32px;
+       height: 30px;
+       margin-left: 2px;
+       margin-right: 4px;
+       margin-top: 5px;
+      overflow: hidden; 
+   
+   }
+   
+   header  .innerheader .sidebartbtn:hover{
+   
+       width: 30px;
+       height: 30px;
+       margin-left: 1.5px;
+   }
+   header  .innerheader .sidebartbtn .p {
+      
+    padding-top: 5px;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+
+}
+
+header  .innerheader .sidebartbtn .p p{
+    width: 80%;
+    height: 3.5px;
+    margin-bottom: 2px;
+    margin-top: 2.6px;
+}
+header  .innerheader .sidebartbtn .p .bar1{
+
+    transform: rotate(-135deg) translate(-8.5px , 9px);
+    width: 40%;    
+    
+    
+    }
+header  .innerheader .sidebartbtn .p .bar2{
+transform: translateX(2.5px);
+width: 70%;
+    }
+
+header  .innerheader .sidebartbtn .p .bar3{
+    
+        transform: rotate(-45deg) translate(8.5px , 8.5px);
+        width: 40%;
+    
+    }
+}
+@media screen and (max-width: 400px) {
+     /*SIDEBAR BTN*/
+     header  .innerheader .sidebartbtn{
+        width: 28px;
+        height: 28px;
+        margin-left: 2px;
+        margin-right: 4px;
+        margin-top: 4px;
+       overflow: hidden; 
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 30px;
+        height: 30px;
+        margin-left: 1.5px;
+    }
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 4px;
+        padding-left: 1.5px;
+        padding-right: 1.5px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 3.5px;
+        margin-bottom: 2px;
+        margin-top: 2.6px;
+    }
+    header  .innerheader .sidebartbtn .p .bar1{
+
+        transform: rotate(-135deg) translate(-8.5px , 9px);
+        width: 40%;    
+        
+        
+        }
+header  .innerheader .sidebartbtn .p .bar2{
+    transform: translateX(2.5px);
+    width: 70%;
+        }
+
+ header  .innerheader .sidebartbtn .p .bar3{
+        
+            transform: rotate(-45deg) translate(8.5px , 8.5px);
+            width: 40%;
+        
+        }
+}
+
+
+
+
+ /*LOGIN BOX*/
+
+
+/*LOGIN Pop up page*/
+
+.loginbox{
+    display: none;
+    z-index: 10;
+    border: none;
+    box-shadow: 2px 2px 2px 5px rgba(211, 208, 208, 0.719);
+    width: 900px;
+    height: 500px;
+  position: absolute;
+  left:25%; top: 100px;
+  /*margin: 50px auto; */
+    border-radius: 10px;
+    background-color: rgba(243, 244, 245, 0.712); 
+    animation: login 0.3s linear;
+    transition: all linear;
+
+}
+
+@keyframes login{
+    from{ transform: scale(0);
+    opacity: 0;}
+    to{transform: scale(1);
+    opacity: 1;}
+}
+
+.loginbox .close{
+    position: absolute;
+    top: 10px;  right: 10px;
+    font-size: 30px;
+    color:white;
+    z-index: 1;
+   /* border: 2px solid violet;*/
+
+}
+
+.loginbox .close:hover{
+    color: rgb(41, 14, 2);
+    font-size: 33px;
+    top:8px; 
+
+
+}
+.loginbox .signin {
+position: absolute;
+width: calc(50% - 20px);
+height: 100%;
+display: inline-block;
+/*border: 1px solid green;*/
+
+
+}
+
+.loginbox .signin h1{
+
+ text-transform: uppercase;
+ font-family: 'Signika', sans-serif;
+     font-weight: 700;
+    font-size: 55px;
+    color: rgb(83, 18, 18);
+    text-align: center;
+    margin-top: 45px;
+    width: 99%;
+    height: fit-content;
+    flex-wrap: nowrap;
+ display: block;
+  /*  border: 2px solid violet;*/
+
+}
+
+.loginbox .signin .links{
+    display: block;
+    position: relative;
+   /* border: 2px solid blue; */
+    height: fit-content;
+    width: 100%;
+
+    margin-top: 10px;
+text-align: center;
+
+
+}
+
+.loginbox .signin .links div{
+
+    display: inline-block;
+    height: 60px;
+    width: 70px;
+    margin-right:15px ;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 2px 1px 0px 1px grey,
+                2px 1px 0px 1px grey,
+                inset 1px 1px 2px 1px rgb(199, 199, 199),
+                1px 1px 0px 1px grey;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.loginbox .signin .links div:hover {
+
+    background-color: rgb(223, 222, 222);
+    height: 62px;
+    width: 72px;
+    margin-right:14px ;
+
+
+
+}
+.loginbox .signin .links div .fa{
+
+font-size: 40px;
+padding-top: 10px;
+padding-left: 8px;
+color: rgb(214, 16, 16);
+
+}
+
+.loginbox .signin .links div .fa-facebook{
+    padding-left: 5px;
+    color: blue;
+
+}
+
+.loginbox .signin .links div .fa-linkedin{
+        color: rgb(34, 34, 73);
+    }
+
+
+
+
+
+.loginbox .signin form{
+
+    position: relative;
+    margin-top: 20px;
+    height: fit-content;
+  /*  border: 1px solid black;  */
+}
+
+.loginbox .signin form label{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif;
+    display: block;
+    color: rgb(31, 30, 30);
+    margin-bottom: 5px;
+
+    
+}
+.loginbox .signin form input{
+    color: grey;
+    width: 85%;
+    height: 35px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    0 5px 5px rgba(5, 5, 5, 0.521);
+}
+
+  
+.loginbox .signin form input:focus{
+        outline: none;
+  }
+
+.loginbox .signin form  .fa{
+
+    position: absolute; 
+    font-size: 22px;
+    transform: translate(-30px , 12px);
+  }
+
+  .loginbox .signin form  .fa:hover{
+
+    font-size: 24px;
+    transform: translate(-32px , 11px);
+  }
+.loginbox .signin form .button{
+
+    display: block;
+  }
+
+.loginbox .signin form .button:focus{
+        outline: none;
+
+ }
+
+ .loginbox .signin h5{
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(75, 74, 74);
+    padding-top: 10px;
+ }
+ .loginbox .signin .remember {
+     display: block;
+     width: 100%;
+    /* border: 1px solid blue;*/
+
+ }
+
+ .loginbox .signin .remember input{
+     width: 18px;
+     height: 16px;
+     box-shadow: none;
+     display: inline-block;
+ }
+
+
+ .loginbox .signin .remember p{
+    flex-wrap: nowrap;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Signika', sans-serif;
+    color: rgb(109, 108, 108);
+
+
+}
+
+.loginbox .signin .button{
+
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    background-color: rgba(238, 27, 80, 0.904);
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    position: relative;
+    cursor: pointer;
+}
+
+.loginbox .signin .button  span{
+
+    width: 100%;
+    height: 100%;
+}
+
+.loginbox .signin .button span::after{
+    content: '\00bb';
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    color: white;
+    font-size: 46px;
+    top:-12px;
+    right: 25px;
+    transition: 0.5s;
+
+}
+.loginbox .signin .button:hover{
+    background-color: rgba(233, 17, 71, 0.904);
+
+}
+
+.loginbox .signin .button:hover span::after{
+    opacity: 1;
+    color: white;
+}
+
+.loginbox .signin .button:hover span{
+    padding-left: 0px;
+    font-size: 27px;
+
+}
+
+.loginbox .signin .forgot{
+
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: rgb(42, 42, 196);
+}
+
+.loginbox .signup{
+
+        width: calc(50% + 10px);
+        height: 100%;
+        position: absolute; right: 0em;
+      /*  border: 1px solid orange;*/
+       display: inline-block;
+       background-color: rgba(241, 30, 65, 0.801);
+       border-bottom-right-radius: 10px;
+       border-top-right-radius: 10px;
+       
+ }
+
+ .loginbox .signup h2{
+    font-family: 'Signika', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+ }
+
+ .loginbox .signup h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    font-weight: 500;
+ }
+
+ .loginbox .signup span{
+    padding-left:8px;
+ }
+
+
+ 
+ .loginbox .signup button{
+     display: block;
+     width: 200px;
+     height: 40px;
+     background-color: transparent;
+     border: 2.5px solid rgba(230, 220, 220, 0.767);
+     border-radius: 10px;
+     margin: 25px auto;
+     font-size: 20px;
+     color: rgb(236, 222, 222);
+ }
+
+ .loginbox .signup button:hover{
+
+    width: 202px;
+    height: 42px;
+    background-color:rgba(241, 30, 65, 0.801);
+    margin: 24px auto;
+
+ }
+
+ .loginbox .signup button:focus{
+     outline: none;
+ }
+
+/*MAINBODY*/
+
+.mainbody{
+
+    position: relative;
+    width: calc(100% - 0px);
+   /* border: 1px solid rgb(227, 13, 247);  */
+
+}
+
+
+/*  LEFTSIDE  */
+
+.mainbody .leftside{
+    display: block;
+    position: absolute;
+    right: 0px; 
+    width: 0px ; 
+ /* border: 1px solid red;  */
+    z-index: 5;
+    transform: translateY(-30px);
+    overflow: hidden;
+    transition: all 200ms linear;
+
+}
+
+/*SIDEBAR*/
+
+
+/*sidebar is the class that we will add through javascript for sliding effect of sidbar*/
+
+.mainbody .leftside .sidebar{
+    position:relative;
+    float: right;
+    width: 300px;
+    height:100%;
+    background-color: rgba(241, 225, 228, 0.863);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;   
+    box-shadow: 5px 8px 5px rgba(240, 192, 204, 0.89),
+                -1px 0px 3px 1px rgba(243, 216, 222, 0.89);
+    z-index: 5;
+    user-select: none;
+
+}
+.mainbody .leftside  .sidebar  h2{
+    width: 100%;
+    background-color: rgba(250, 212, 231, 0.801);
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+.mainbody .leftside  .sidebar ul{
+   /* border: 1px solid green; */
+    width: calc(100% - 0px);
+
+
+
+}
+
+
+.mainbody .leftside  .sidebar ul li{
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 218, 225, 0.877);
+    border-top: 1px solid  rgb(248, 215, 224);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+ 
+}
+
+.mainbody .leftside  .sidebar ul li:first-of-type{
+    margin-top: 10px;
+    border-top: none;
+
+}
+
+.mainbody  .leftside  .sidebar ul li a{
+    display: block;
+    color:rgb(37, 7, 22);
+    font-weight: 500;
+    font-size: 19px;
+    font-family: 'Mukta', sans-serif;
+    padding-left:10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mainbody .leftside  .sidebar ul li a .fa{
+        display: inline-block;
+        padding-right: 7px;
+
+}
+
+
+.mainbody  .leftside  .sidebar ul li:hover {
+    font-size:20px; 
+    background-color:  rgb(245, 212, 217) ;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color:rgb(80, 16, 48);
+
+}
+
+ /*Note: even in the hover for the text edit we need to go down to the heirarchy like class as for 
+   editting the bold and color we need to go down upto a as down below*/
+.mainbody .leftside  .sidebar ul li:hover a{   
+font-size: 21px;
+font-weight: 600;
+
+
+}
+
+
+.mainbody .leftside  .sidebar .sociallinks{ 
+    width: fit-content;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    
+    
+}
+
+.mainbody .leftside  .sidebar .sociallinks a{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 8px;
+
+}
+
+.mainbody .leftside  .sidebar .sociallinks a:hover{
+    border-radius:5px ;
+    color: rgb(17, 17, 17);
+    background-color:rgba(243, 205, 224, 0.842);
+
+
+
+}
+
+
+
+.mainbody .subbody{
+
+    position: relative;
+    width: calc(100% - 100px);
+    margin: 20px auto;
+  /*  border: 1px solid red;  */
+    display: flow-root;
+    padding-bottom: 30px;
+
+}
+
+.mainbody .subbody .left{
+
+    position: relative;
+    width: calc(100% - 15px);
+    margin: 20px auto;
+  /* border: 1px solid rgb(136, 255, 0);  */
+    clear: both;
+display: block;
+overflow: hidden;
+
+}
+
+.mainbody .subbody .left h1{
+    width: calc(90% - 50px);
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px auto;
+    padding-left: 20px;
+   /* border: 1px solid rgb(255, 0, 191);  */
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 40px;
+
+}
+
+/*PRODUCT*/
+
+.mainbody .subbody .left .product{
+    width: calc(90% - 50px);
+    height: 500px;
+   /* border: 1px solid rgb(66, 195, 255);   */
+    background-color: rgba(241, 241, 241, 0.5);
+    border-bottom: 1px solid rgb(31, 30, 30);
+    margin: 10px auto;
+    overflow: hidden;
+
+}
+.mainbody .subbody .left .product:first-of-type{
+    margin-top: 0px;
+    border-top: 1px solid rgb(31, 30, 30);
+
+
+}
+.mainbody .subbody .left .product .pro{
+    position: relative;
+    display: block;
+    width: calc(100% - 0px);
+    height:calc(100% - 250px);
+ /*  border: 1px solid rgb(255, 66, 66);  */
+
+overflow: hidden;
+
+}
+
+
+
+.mainbody .subbody .left .product .pro .image{
+    position: relative;
+    float: left;   
+    width: calc(28% - 5px);
+    height:calc(100% - 10px);
+  /*  border: 1px solid rgb(255, 66, 66);  */
+
+
+
+}
+
+.mainbody .subbody .left .product  .pro .image img{
+
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    padding: 15px;
+
+
+}
+
+.mainbody .subbody .left .product .pro .details{
+    position: relative;
+    width: calc(40% - 5px);
+    height:calc(100% - 10px);
+    float: left;   
+  /*  border: 1px solid rgb(1, 9, 12);   */ 
+
+}
+
+.mainbody .subbody .left .product .pro .details h2{
+
+    font-size: 30px;
+    padding: 6px 10px;
+    text-transform: uppercase; 
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.mainbody .subbody .left .product .pro .details h3{
+
+    font-size: 16px;
+    padding: 3px 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.mainbody .subbody .left .product .pro .details h3 m{
+    text-transform: uppercase;
+}
+.mainbody .subbody .left .product .pro .details h3 b{
+    color: rgb(14, 90, 231);
+    cursor: pointer;
+}
+.mainbody .subbody .left .product .pro .details .quantity{
+    /* border: 1px solid rgb(86, 253, 8);  */
+    margin-top: 30px;
+    margin-left: 20px;
+    width: fit-content;
+
+}
+
+.mainbody .subbody .left .product .pro .details .quantity button{
+    width: 60px;
+    height: 47px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    margin-right: 0px;
+    margin: 0px;
+    padding: 2px;
+   float: left;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 18px;
+   color: rgb(82, 81, 81);
+
+
+}
+
+
+.mainbody .subbody .left .product .pro .details .quantity input{
+    float: left;
+    width: 60px;
+    height: 43px;
+    border: none;
+    background-color: rgba(236, 236, 236, 0.795);
+    font-size: 18px;
+    color: rgb(144, 144, 144);
+    border:1px solid  rgb(224, 224, 224);
+    text-align: center;
+
+}
+
+
+
+.mainbody .subbody .left .product .pro  .price{
+    position: relative;
+    width: calc(15% - 5px);
+    height:calc(100% - 10px);
+    float: left;   
+   /*  border: 1px solid rgb(86, 253, 8);   */
+     padding-top: 15px; 
+
+}
+
+.mainbody .subbody .left .product .pro  .price span{
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 10px;
+    color: rgb(92, 41, 41);
+
+}
+
+
+.mainbody .subbody .left .product .pro .status{
+    position: relative;
+    width: calc(18% - 5px);
+    height:calc(100% - 10px);
+    float: left;   
+  /*  border: 1px solid rgb(86, 253, 8);   */ 
+  background-color: rgba(236, 236, 236, 0.521);
+
+
+}
+.mainbody .subbody .left .product .pro .status div{
+    display: block;
+    position: relative;
+    width: calc(100% - 0px);
+    height: 45px;
+    padding-top: 5px;
+    border: 1px solid  rgba(233, 233, 233, 0.822);  
+    background-color: rgba(231, 231, 231, 0.712);
+    color: rgb(61, 61, 61);
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+        font-size: 25px;
+
+   
+
+}
+.mainbody .subbody .left .product .pro .status span{
+    display: block;
+    position: relative;
+    width: calc(100% - 0px);
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+        font-size: 30px;
+        margin-top: 30px;
+        text-transform: uppercase;
+
+}
+
+ .cancelled{
+    color: rgb(248, 16, 8);
+
+
+}
+
+.returned{
+    color: rgb(245, 50, 99);
+
+
+}
+ .pending{
+    color: green;
+
+}
+ .delivered{
+    color: rgb(106, 54, 226);
+
+}
+
+.mainbody .subbody .left .product .statusbar{
+    position: relative;
+    display: block;
+    width: calc(80% - 0px);
+    height: 130px;
+    margin: 10px auto;
+  /* border: 1px solid rgb(39, 35, 253);    */
+
+overflow: hidden;
+
+}
+
+
+.mainbody .subbody .left .product .statusbar .parts{
+    position: relative;
+    width: calc(25% - 3px);
+    height:  calc(100% - 0px);
+   /* border: 1px solid yellow;  */
+    float: left;
+    z-index: 3;
+    overflow: hidden;
+
+}
+
+.mainbody .subbody .left .product .statusbar .line , .mainbody .subbody .left .product .statusbar .line2{
+
+    width: 75%;
+    height:9px;
+    background-color: rgba(218, 213, 213, 0.521);
+    position: absolute;
+    top: 59%;
+    left: 12%;
+
+}
+.mainbody .subbody .left .product .statusbar .line2.delivered{
+    width: 75%;
+    background-color: rgba(71, 255, 46, 0.521);
+    z-index: 2;
+
+}
+.mainbody .subbody .left .product .statusbar .line2.pending{
+    width: 0%;
+    background-color: rgba(71, 255, 46, 0.521);
+    z-index: 2;
+
+}
+.mainbody .subbody .left .product .statusbar .line2.near{
+    width: 50%;
+    background-color: rgba(71, 255, 46, 0.521);
+    z-index: 2;
+
+}
+.mainbody .subbody .left .product .statusbar .line2.dispatched{
+    width: 25%;
+    background-color: rgba(71, 255, 46, 0.521);
+    z-index: 2;
+
+}
+
+.mainbody .subbody .left .product .statusbar .parts .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(189, 189, 189, 0.884);
+    background-color: rgba(223, 219, 219, 0.945);
+    margin: 8px auto;
+    font-size: 30px;
+    color: rgb(245, 244, 241);
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.mainbody .subbody .left .product .statusbar .parts .top{
+    width: 100%;
+    height:45px;
+   display:block;
+/* border: 1px solid red;  */
+text-align: center;
+font-size: 18px;
+color: rgba(90, 89, 89, 0.897);
+font-family: 'Noto Sans', sans-serif;
+}
+
+.mainbody .subbody .left .bar{
+    display: block;
+    position: relative;
+    width:  calc(100% - 20px);
+    height: 40px ;
+   /*  border: 1px solid red;  */
+    margin-bottom: 5px;
+
+
+}
+
+.mainbody .subbody .left .product .bar div{
+    width:fit-content;
+    font-size: 24px;
+    display: inline-block;
+    text-transform: uppercase;
+   /* border: 1px solid rgb(0, 217, 255);  */
+  text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+    margin-right: 80px;
+
+}
+.mainbody .subbody .left .product .bar div a{
+    display: block;
+
+}
+
+.mainbody .subbody .left .product .bar div:hover{
+
+    background-color: rgba(235, 233, 233, 0.719);
+
+}
+
+.mainbody .subbody .left .product .bar div:hover m{
+    color: rgb(67, 116, 250);
+}
+
+
+.mainbody .subbody .left .more{
+
+    position: relative;
+    width: calc(85% - 30px);
+    margin: 10px auto;
+    padding-bottom: 30px;
+    /* border: 1px solid rgb(27, 27, 27);  */
+
+
+}
+
+.mainbody .subbody .left .more a{
+    width: fit-content;
+    font-size: 22px;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 7px;
+    margin-right: 20px;
+    padding: 5px;
+    color: rgb(250, 54, 113);
+   /* border: 1px solid red;  */
+
+}
+
+.mainbody .subbody .left .more a:hover{
+    font-size: 23px;
+    padding: 4px;
+    margin-top: 6px;
+    color: rgb(252, 38, 102);
+
+
+}
+
+.mainbody .subbody .left .norecord{
+    width: fit-content;
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding: 30px;
+    color: rgb(248, 59, 115);
+    border-radius:  10px;
+    background-color: rgba(226, 226, 226, 0.685);
+   /*border: 1px solid red;   */
+
+
+}
+.mainbody .subbody .left .norecord span{
+    color: rgb(44, 118, 255);
+cursor: pointer;
+}
+
+
+
+/*RECOMMENDED CATEGORY SLIDER*/
+
+.mainbody .recommend{
+    width: calc(100% - 80px);  
+    height: 320px; 
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;  
+   overflow: hidden;
+   margin-bottom: 40px;
+
+
+}
+
+.mainbody .recommend h1{
+    width: calc(100% - 0px);
+    text-transform: uppercase;
+    padding: 10px;
+   /* border: 1px solid rgb(255, 0, 191);  */
+   font-family: 'Source Sans Pro', sans-serif;
+   margin-bottom: 20px;
+}
+
+.mainbody .recommend .categoryslider{
+    /* border: 1px solid rgb(179, 255, 0);    */
+     width: calc(100% - 0px);  
+     height: 320px; 
+     position: relative;
+}   
+
+.mainbody  .recommend  .categoryslider .images{
+    width: calc(100% - 30px);  
+    height: 100%; 
+    margin-left: 5px;  
+
+}
+
+.mainbody  .recommend  .categoryslider .images .s_items{
+
+    /*over here width doesnot matter as they will have width to fit 3 images(as mentioned in script below) in a frame. 
+    
+    width:40%;
+    */
+    height: 100%; 
+     position: relative;
+     margin-left: 5px; 
+     margin-right: 5px; 
+     border-radius: 10px;
+     
+}
+
+
+.mainbody  .recommend  .categoryslider .images .s_items a img{
+    width: 100%;
+    height: calc(320px - 70px);
+    border-radius: 10px;
+    padding-top: 0px;
+    cursor: pointer;
+
+
+
+}
+.mainbody  .recommend  .categoryslider .images .s_items a button{
+    width: 100%;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+padding-bottom: 10px;
+padding-top: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(29, 28, 28);
+text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+border: none;
+cursor: pointer;
+}
+
+.mainbody  .recommend  .categoryslider .images .s_items a button:focus{
+outline: none;
+}
+
+.mainbody  .recommend  .categoryslider .next{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 60px);
+    right: 28px;
+    color: rgb(201, 200, 200);
+    font-size: 47px;
+    font-weight: 800;
+    cursor: pointer;
+    user-select: none;
+
+
+
+}
+.mainbody  .recommend  .categoryslider .prev{ 
+  
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: calc(50% - 60px);
+    left: 8px;
+    color: rgb(201, 200, 200);
+    font-size: 47px;
+    font-weight: 800;
+    user-select: none;
+   
+
+
+}
+
+
+.mainbody  .recommend  .categoryslider .prev:hover,
+.mainbody  .recommend  .categoryslider .next:hover{
+
+    color: rgb(83, 83, 83);
+    font-size: 50px;
+    top: calc(50% - 58px);
+
+}
+
+
+/*FOOTER*/
+
+.footer{
+    display: block;
+    width: 100%;
+    height:370px;
+    bottom: 0px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+
+}  
+
+
+.footer .innerfooter{
+    width:100vw;
+    margin: 0 auto;
+    height: 100%;
+
+}
+.footer .innerfooter .logo{
+    display: block;
+    width: 25%;
+    height: 100%;
+    float: left;
+   
+    margin-top: 20px;
+}
+
+.footer .innerfooter .logo img{
+   padding-top: 8px;
+   padding-left: 35px;
+
+    width: 250px;
+    height: 190px;
+    
+
+}
+.footer .innerfooter .logo .address{
+padding-left: 35px;
+padding-top: 15px;
+font-size: 18px;
+}
+
+.footer .innerfooter .logo .address span{
+    color: rgb(209, 203, 203);
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+
+.footer .innerfooter .info{
+   position: relative;
+    height:fit-content;
+   width: calc(15% - 5px);
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+   /* border: 1px solid red;  */
+    
+}
+.footer .innerfooter .info form{
+    padding-top: 10px;
+    
+
+}
+
+
+.footer .innerfooter .info .contactinput{
+
+    border: none;
+    border-radius: 8px;
+   width: 250px;
+    /* this edits the text inside them*/
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    resize: none;
+
+}
+
+.footer .innerfooter .info .file{
+    font-size: 13px;
+    color: white;
+    border: none;
+}
+
+.footer .innerfooter .info h1{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(235, 227, 160);
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0.5px;
+    flex-wrap: nowrap;
+
+
+}
+
+.footer .innerfooter .info h1 span{ /*i did this only because the other blocks were moving due to hover padding 
+    thus making them smaller than the fixed upper letter so it doesnot move now.*/
+    color: black;     font-family: 'Mukta', sans-serif;
+
+}
+
+
+.footer .innerfooter .info h2{
+    display: block; 
+    font-size: 17px;
+    padding-bottom: 5px;
+    color: wheat;
+    font-family: 'Mukta', sans-serif;
+
+
+}
+.footer .innerfooter .info a{
+    display: block;/*untill we made this block the padding effect wasnt working*/
+   padding-bottom: 2px;
+    font-size: 18px;
+    color: rgb(215, 243, 238);
+    font-family: 'Mukta', sans-serif;
+
+    
+}
+.footer .innerfooter .info a:hover{
+    padding-left: 2px;
+    font-size:20px; 
+    font-weight :500;
+    color: rgb(221, 179, 101);
+
+
+}
+/* Dont know why after using this all the link in footer changes to cyan evem if not visited 
+may be given no link address.
+
+.footer .innerfooter .info a:visited{
+    text-decoration:underline cyan ;
+    color: cyan;
+
+}
+
+.footer .innerfooter .info .submit{
+  float: right;
+
+}
+
+*/
+
+.footer .copyright{
+position: absolute; /*see this is the trick using position absolute and main footer as relative so it a
+djust accordingly also note that always bottom does not work so try it by top only  */
+top: 92%;
+font-family: 'Mukta', sans-serif;
+font-size: 15px;
+background-color: rgba(20, 20, 20, 0.726);
+color: rgb(221, 220, 220);
+text-align: center;
+font-weight: 400;
+width: 100%;
+height: 20px;
+padding-top: 3.5px;
+padding-bottom: 5px;
+
+
+}
+
+.footer .copyright .fa{
+    padding-right: 5px;
+    
+}
+
+.footer .footerpayment{
+    
+    width: 100%;
+    position: absolute;
+    top: 76%;     /*see this is the trick using position absolute and main footer as relative so it a
+    djust accordingly also note that always bottom does not work so try it by top only  */
+    text-align: center;
+}
+
+
+.footer .footerpayment img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    
+}
+
+/*Since not happy with sizes of google pay and mastercard so gave 
+them a name and editting it seperately. */
+.footer .footerpayment .Payment1{
+
+    width: 60px;
+}
+
+
+.footer .footerpayment .Payment2{
+
+    width: 70px;
+}
+
+
+
+
+
+
+

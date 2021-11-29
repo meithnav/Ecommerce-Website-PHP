@@ -1,0 +1,767 @@
+*{
+    margin: 0;
+    padding: 0;
+text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    height: fit-content;
+   
+
+
+}
+
+header {
+      position: relative;
+      width: 100%;
+      height:auto;
+      background-color:  rgb(248, 248, 245);
+      position: relative;   
+      border-bottom: 2px 5px solid rgb(206, 202, 202);
+     box-shadow: 2px 2px 3px 5px rgba(230, 228, 228, 0.63);
+}
+
+header .logo{
+    display: inline-block;
+    width: fit-content;
+    height: 100%;
+}
+
+header .logo h1 a{ 
+    color:black;
+    font-weight: 600;
+    font-family:'Bauhaus 93';
+    font-size: 40px;
+    padding-top: 5px;
+    padding-left: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+header nav{ 
+    position: relative;
+    float: right;
+    padding-right: 25px;
+    padding-top: 12px;
+}
+
+header nav div{
+    display: inline-block; 
+   /* border: 1px solid red; */
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+
+}
+
+header nav div:hover{
+    background-color: rgba(212, 209, 209, 0.527);
+}
+
+header nav div a{
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 15px;
+    padding-top: 5px;
+    font-weight: 600;
+    color:rgb(43, 41, 41);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+header nav .login:hover {
+    background-color: rgba(243, 42, 86, 0.692);
+}
+
+
+
+
+/*MAIN BODY*/
+
+.mainbody{
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 770px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+   /* border: 1px solid yellow; */
+
+  
+
+}
+
+.mainbody .bottom .right .top{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  /*  border: 1px solid red;  */
+
+}
+
+.mainbody .bottom .right .top h1{
+   
+    font-size: 35px;
+    padding-left: 20px;
+    color:rgb(43, 41, 41);
+    text-transform: capitalize;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+.mainbody .bottom .right .top p{
+    padding-left: 20px;
+    padding-top: 8px;
+    color:rgb(43, 41, 41);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+
+.mainbody .bottom{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  /* border: 1px solid orange;  */
+
+   margin-bottom: 10px;
+
+}
+
+.mainbody .bottom .left{
+    position: relative;
+    width: calc(35% - 30px);
+    height:calc(100% - 5px);
+    float: left;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-top: 5px;
+    overflow: hidden;
+
+   /* border: 1px solid green;  */
+   /* background-color: rgba(229, 226, 226, 0.534);
+border-radius: 15px;
+box-shadow: 2px 2px 5px 5px rgb(189, 187, 187),
+            inset  0px 2px 5px 0px rgb(216, 215, 215),
+            inset 2px 2px 5px 0px rgba(224, 222, 222, 0.582),
+            2px 2px 3px 0px rgb(214, 208, 208) ;  */
+
+
+}
+
+.mainbody .bottom .left img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.mainbody .bottom .left .imgtext{
+    display: none; 
+   position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.603);
+    transition: all 10s linear;
+
+}
+.mainbody .bottom .left .imgtext h3{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 130px;
+    color: rgb(197, 192, 192);
+    font-weight: 800;
+
+}
+
+.mainbody .bottom .left:hover .imgtext{
+    display: block;
+    animation: fade 0.5s linear;
+}
+
+@keyframes fade{
+    from{opacity: 0;}
+    to{ opacity: 1; }
+}
+
+
+
+
+.mainbody .bottom .left .imgtext p{
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight:500;
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: rgb(160, 156, 156);
+
+}
+.mainbody .bottom .left .imgtext p span{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(189, 189, 105);
+    cursor: pointer;
+}
+
+.mainbody .bottom .left .imgtext p strong{
+    color: rgb(236, 96, 138);
+
+
+}
+
+.mainbody .bottom .left .imgtext p strong:hover{
+    font-weight: 600;
+    font-size: 21px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(231, 61, 112);
+
+}
+
+
+
+.mainbody .bottom .left .imgtext p:first-of-type{
+    padding-top: 40px;
+}
+
+.mainbody .bottom .left .imgtext p a{
+    color: rgb(160, 156, 156);
+}
+
+.mainbody .bottom .left .imgtext p a:hover{
+    font-weight: 600;
+    font-size: 21px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(53, 94, 226);
+
+}
+
+
+
+/*RIGHT SIDE*/
+
+.mainbody .bottom .right{
+    position: relative;
+    float: left;
+    width: calc(65% - 30px);
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 10px;
+   /* border: 1px solid brown; */
+   
+   /*border: none;
+    background-color: rgba(229, 226, 226, 0.534);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 5px rgb(189, 187, 187),
+            inset  0px 2px 5px 0px rgb(216, 215, 215),
+            inset 2px 2px 5px 0px rgba(224, 222, 222, 0.582),
+            2px 2px 3px 0px rgb(214, 208, 208) ;  */
+
+
+
+}
+
+.mainbody .bottom .right form h1{
+    font-size: 40px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(43, 41, 41);
+
+
+}
+
+.mainbody .bottom .right form .row{
+    display: flow-root;
+    width: calc(100% - 30px) ;
+    margin-top: 20px;
+  /* border: 1px solid rgb(26, 23, 204);  */
+    padding: 10px;
+
+}
+
+.mainbody .bottom .right form .row:last-of-type{
+    margin-top: 20px;
+}
+
+.mainbody .bottom .right form .row label ,  .mainbody .bottom .right form .row .rleft label{
+  font-size: 22px;
+  padding-right: 5px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.mainbody .bottom .right form .row input , .mainbody .bottom .right form .row .rleft input{ 
+    font-size: 18px;
+    width: 250px;
+    padding:  10px; 
+    color: rgb(97, 96, 96); 
+    margin-right: 30px; 
+    margin-top: 6px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 6px; 
+    background-color: rgba(230, 225, 225, 0.699);
+    box-shadow: 2px 2px 5px 0px rgba(235, 235, 235, 0.842),
+                inset 2px 1px 0px 1px rgba(241, 239, 239, 0.842),
+                inset 0px 0px 3px 0px rgba(247, 247, 247, 0.733),
+                2px 2px 0px 3px rgba(231, 231, 231, 0.842);
+    
+  }
+
+  .mainbody .bottom .right form .row .number{
+    width: 180px;
+
+  }
+
+  .mainbody .bottom .right form .row input:focus,
+  .mainbody .bottom .right form  .row .rleft .address:focus{
+      outline: none;
+  }
+
+ 
+ .mainbody .bottom .right form .row .rleft{
+    position: relative;
+    width: 45%;
+   /* border: 1px solid rgb(23, 204, 77);  */
+    height: fit-content;
+    float: left;
+    margin-left: 10px;
+
+
+  }
+
+ .mainbody .bottom .right form .row .rleft .address{
+     display: block;
+     font-size: 18px;
+     width: 320px;
+     padding: 15px  10px; 
+      height: 200px;
+      resize: none;
+      color: rgb(97, 96, 96); 
+      margin-right: 0px; 
+      margin-top: 6px;
+      border: none;
+      border-radius: 10px; 
+      background-color: rgba(230, 225, 225, 0.699);
+      box-shadow: 2px 2px 5px 0px rgba(235, 235, 235, 0.842),
+                  inset 2px 1px 0px 1px rgba(241, 239, 239, 0.842),
+                  inset 0px 0px 3px 0px rgba(247, 247, 247, 0.733),
+                  2px 2px 0px 3px rgba(231, 231, 231, 0.842);
+      
+    }
+
+  
+
+  .mainbody .bottom .right form .row input:hover,
+  .mainbody .bottom .right form .row .rright .address:hover{
+    background-color: rgb(233, 227, 227);
+    box-shadow: 2px 2px 3px 0px rgba(219, 219, 219, 0.507),
+    inset 1px 1px 0px 1px rgba(212, 210, 210, 0.322),
+    inset 0px 0px 3px 0px rgba(218, 215, 215, 0.733),
+    1px 1px 0px 3px rgba(248, 248, 248, 0.568);
+  }
+  
+
+
+
+  /*THE MESSAGE OF PASSWORD */
+  .mainbody .bottom .right .message{
+
+    display: none;
+   
+    transform: translateY(-280px);
+    z-index:5;
+    width: 350px;
+    height: 170px;
+    border-radius: 5px;
+    background: #e4e2e2cb;
+    box-shadow: 2px 2px 5px 0px rgba(231, 230, 230, 0.842),
+    inset 2px 1px 10px 1px rgba(199, 198, 198, 0.637),
+    inset 0px 0px 3px 0px rgba(247, 247, 247, 0.733),
+    2px 2px 5px 3px rgba(204, 202, 202, 0.425);
+  }
+
+  .mainbody .bottom .right .message h3{
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(43, 41, 41);
+
+  }
+  .mainbody .bottom .right .message p{
+
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 5px;
+    color: rgb(43, 41, 41);
+  }
+
+  .mainbody .bottom .right .message .invalid{
+
+    color: red;
+  }
+
+/*CLASS WHICH I WILL ADD AFTER FULFILLING MY CONDITION*/
+  .mainbody .bottom .right .message .valid{
+
+    color: green;
+  }
+
+  .mainbody .bottom .right .message .invalid::before{
+      content: "✖";
+      font-weight: 700;
+      padding-right:8px;
+
+
+  }
+  .mainbody .bottom .right .message .valid::before{
+    content: "✔";
+    font-weight: 700;
+    padding-right:8px;
+
+  }
+
+ 
+
+
+
+  .mainbody .bottom .right form .row input[type ="checkbox"]{
+      box-shadow: none;
+      background-color: none;
+      width: fit-content;
+      margin-right: 3px;
+  }
+
+  /*TO HIDE THE ARROWS OF THE NUMBER */
+  input::-webkit-outer-spin-button ,    
+      input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+      }
+  
+
+
+.mainbody .bottom .right form p{
+   display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    
+    color: rgb(43, 41, 41);
+
+
+}
+.mainbody .bottom .right form button{
+
+    border: none;
+    border-radius: 15px;
+    width: 130px;
+    height: 35px;
+    background-color: rgba(247, 25, 73, 0.767);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: 1px;
+
+}
+
+.mainbody .bottom .right form button:hover{
+
+    background-color: rgba(240, 51, 92, 0.767);
+    font-size: 19px;
+    width: 132px;     height: 37px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.mainbody .bottom .right form button:focus{
+    outline: none;
+}
+
+.mainbody .bottom .right .sociallinks{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+   /* border: 1px solid red ; */
+}
+
+.mainbody .bottom .right .sociallinks h1{ 
+    display: inline-block;    
+  /*  border: 1px solid orange ;  */
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+    color:rgb(41, 40, 40);
+    text-transform: capitalize;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+
+.mainbody .bottom .right .sociallinks h1 span{ 
+    display: block;
+    font-size: 33px;
+    color:rgb(87, 84, 84);
+    margin-bottom: 10px;
+
+
+
+}
+.mainbody .bottom .right .sociallinks .social{
+    display: inline-block;
+   
+    font-size: 35px;
+   /* border: 1px solid green ;  */
+    margin-left: 80px;
+
+}
+.mainbody .bottom .right .sociallinks .social .fa{
+
+    padding-right: 20px;
+
+}
+
+.mainbody .bottom .right .sociallinks .social .fa:hover{
+
+    padding-right: 19px;
+    font-size: 37px;
+
+
+}
+
+.mainbody .bottom .right .sociallinks .social .fa-instagram{
+        color: rgb(233, 17, 53);
+}
+
+.mainbody .bottom .right .sociallinks .social .fa-twitter{
+    color: rgb(17, 190, 233);
+}
+
+
+
+
+/*FOOTER*/
+
+.footer{
+    position: relative;
+    display: block;
+    width: 100%;
+    height:370px;
+    margin-top: 70px;
+    background-color: black;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}  
+
+
+.footer .innerfooter{
+    width:100vw;
+    margin: 0 auto;
+    height: 100%;
+
+}
+.footer .innerfooter .logo{
+    display: block;
+    width: 25%;
+    height: 100%;
+    float: left;
+   
+    margin-top: 20px;
+}
+
+.footer .innerfooter .logo img{
+   padding-top: 8px;
+   padding-left: 35px;
+
+    width: 250px;
+    height: 190px;
+    
+
+}
+.footer .innerfooter .logo .address{
+padding-left: 35px;
+padding-top: 15px;
+font-size: 18px;
+}
+
+.footer .innerfooter .logo .address span{
+    color: rgb(209, 203, 203);
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+
+.footer .innerfooter .info{
+   position: relative;
+    height:fit-content;
+   width: calc(15% - 5px);
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+   /* border: 1px solid red;  */
+    
+}
+.footer .innerfooter .info form{
+    padding-top: 10px;
+    
+
+}
+
+
+.footer .innerfooter .info .contactinput{
+
+    border: none;
+    border-radius: 8px;
+   width: 250px;
+    /* this edits the text inside them*/
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    resize: none;
+
+}
+
+.footer .innerfooter .info .file{
+    font-size: 13px;
+    color: white;
+    border: none;
+}
+
+.footer .innerfooter .info h1{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(235, 227, 160);
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0.5px;
+    flex-wrap: nowrap;
+
+
+}
+
+.footer .innerfooter .info h1 span{ /*i did this only because the other blocks were moving due to hover padding 
+    thus making them smaller than the fixed upper letter so it doesnot move now.*/
+    color: black;     font-family: 'Mukta', sans-serif;
+
+}
+
+
+.footer .innerfooter .info h2{
+    display: block; 
+    font-size: 17px;
+    padding-bottom: 5px;
+    color: wheat;
+    font-family: 'Mukta', sans-serif;
+
+
+}
+.footer .innerfooter .info a{
+    display: block;/*untill we made this block the padding effect wasnt working*/
+   padding-bottom: 2px;
+    font-size: 18px;
+    color: rgb(215, 243, 238);
+    font-family: 'Mukta', sans-serif;
+
+    
+}
+.footer .innerfooter .info a:hover{
+    padding-left: 2px;
+    font-size:20px; 
+    font-weight :500;
+    color: rgb(221, 179, 101);
+
+
+}
+/* Dont know why after using this all the link in footer changes to cyan evem if not visited 
+may be given no link address.
+
+.footer .innerfooter .info a:visited{
+    text-decoration:underline cyan ;
+    color: cyan;
+
+}
+
+.footer .innerfooter .info .submit{
+  float: right;
+
+}
+
+*/
+
+.footer .copyright{
+position: absolute; /*see this is the trick using position absolute and main footer as relative so it a
+djust accordingly also note that always bottom does not work so try it by top only  */
+top: 92%;
+font-family: 'Mukta', sans-serif;
+font-size: 15px;
+background-color: rgba(20, 20, 20, 0.726);
+color: rgb(221, 220, 220);
+text-align: center;
+font-weight: 400;
+width: 100%;
+height: 20px;
+padding-top: 3.5px;
+padding-bottom: 5px;
+
+
+}
+
+.footer .copyright .fa{
+    padding-right: 5px;
+    
+}
+
+.footer .footerpayment{
+    
+    width: 100%;
+    position: absolute;
+    top: 76%;     /*see this is the trick using position absolute and main footer as relative so it a
+    djust accordingly also note that always bottom does not work so try it by top only  */
+    text-align: center;
+}
+
+
+.footer .footerpayment img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    
+}
+
+/*Since not happy with sizes of google pay and mastercard so gave 
+them a name and editting it seperately. */
+.footer .footerpayment .Payment1{
+
+    width: 60px;
+}
+
+
+.footer .footerpayment .Payment2{
+
+    width: 70px;
+}
+

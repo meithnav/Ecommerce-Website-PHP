@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+
+}
+body{    background-color: rgba(188, 191, 192, 0.801);
+}
+
+.box{
+
+    width: 80%;
+    height: fit-content;
+    min-height: 300px;
+   /* border: 1px solid rgb(5, 17, 26);  */
+    margin: 90px auto;
+    background-color: rgba(202, 235, 248, 0.801);
+
+}
+
+.box header{
+    width: 100%;
+    height: 50px;
+margin-bottom: 10px; 
+
+}
+
+   
+.box header a{
+    color: lightcoral;
+    width: calc(25% - 2.4px);
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid rgb(47, 47, 47);
+    background-color: rgb(25, 26, 32);
+    user-select: none;
+
+}
+
+.box header a:hover{
+    background-color: rgb(6, 6, 7);
+    font-size: 33px;
+    padding-top: 9.5px;
+}
+
+.datatable{  
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+
+}
+
+.datatable h1{  
+    text-align:left;
+    padding-left: 20px;
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+   /* border: 1px solid rgb(19, 131, 43); */
+    padding-top: 8px;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.datatable table{  
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+.datatable table th{  
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 5px;
+    border: 1px solid rgb(189, 187, 187);
+    background-color: rgb(29, 180, 240);
+    user-select: none;
+
+}
+
+.datatable table th a{  
+    color: rgb(2, 4, 5);
+
+}
+.datatable table td{  
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid rgb(177, 205, 250);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.datatable table .email{  
+    text-align: left;
+    padding-left: 20px;
+    text-transform: lowercase;
+    
+}
+.datatable table .name{  
+    text-align: left;
+    padding-left: 28px;
+    text-transform: capitalize;
+    font-size: 22px;
+
+}
+
+.datatable table tr td .edit{  
+    width: fit-content;
+    background-color: red;
+    padding: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+user-select: none;
+}
+
+.datatable table tr td .delete{  
+    width: fit-content;
+    background-color: rgb(243, 122, 23);
+    padding: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+}
+
+.datatable table tr:nth-child(2n+1){  
+    background-color: rgba(183, 215, 245, 0.692);
+}
+.datatable table tr:nth-child(2n){  
+    background-color:rgba(198, 223, 243, 0.692);
+}

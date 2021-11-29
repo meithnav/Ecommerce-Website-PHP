@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+}
+
+input:focus{
+user-select: none;
+outline: none;
+}
+body{    background-color: rgba(188, 191, 192, 0.801);
+}
+
+.box{
+
+    width: 80%;
+    height: fit-content;
+    min-height: 500px;
+   /* border: 1px solid rgb(5, 17, 26);  */
+    margin: 90px auto;
+    background-color: rgba(202, 235, 248, 0.801);
+
+}
+
+.box header{
+    width: 100%;
+    height: 50px;
+margin-bottom: 10px; 
+
+}
+
+   
+.box header a{
+    color: lightcoral;
+    width: calc(25% - 2.4px);
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid rgb(47, 47, 47);
+    background-color: rgb(25, 26, 32);
+
+}
+
+.box header a:hover{
+    background-color: rgb(6, 6, 7);
+    font-size: 33px;
+    padding-top: 9.5px;
+}
+
+.datatable{  
+    position: relative;
+    width: 100%;
+    /*border: 1px solid rgb(19, 131, 43); */
+    padding-bottom: 50px;
+
+}
+.datatable h1{  
+    text-align:left;
+    padding-left: 40px;
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+   /* border: 1px solid rgb(19, 131, 43); */
+    padding-top: 8px;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.datatable .CusId ,  .datatable .editbox {  
+   border: 2px solid rgba(179, 215, 248, 0.554);
+   background-color: rgba(192, 221, 250, 0.794); 
+   border-radius: 10px;
+    width: 55%;
+    margin: 30px auto;
+    height: fit-content;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    padding-bottom: 30px;
+
+}
+
+.datatable .editbox .group{
+
+    margin: 20px 0px;
+}
+
+.datatable .CusId form label , .datatable  .editbox form label{  
+    font-size: 32px;
+    font-weight: 600;
+    font-family: monospace;
+    user-select: none;
+    text-transform: uppercase;
+    margin-right: 5px;
+
+}
+
+.datatable .editbox form label{
+    display: inline-block;
+    width: 220px;
+}
+
+.datatable .CusId form .cId , .datatable .editbox form input{ 
+    
+    display: inline-block;
+    width: 350px;
+    height: 24px;
+    margin-left: 15px;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(11, 21, 27);
+    border-radius: 6px;
+    border: none;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+.datatable .editbox form .email{
+  font-size: 22px;
+}
+
+.datatable .CusId form .submit , .datatable .editbox form .update{ 
+    display: block;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(11, 21, 27);
+    border-radius: 6px;
+    border: none;
+    padding: 8px 0px;
+    background-color: rgba(149, 149, 241, 0.678);
+    user-select: none;
+    
+}
+
+.datatable .CusId form .submit:hover , .datatable .editbox form .update:hover{ 
+    background-color: rgba(135, 135, 238, 0.918);
+}
+

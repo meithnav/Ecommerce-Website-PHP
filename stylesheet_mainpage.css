@@ -1,0 +1,4463 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+input, button,select,option{
+    outline: none;
+}
+
+html{
+
+background-color: rgba(241, 240, 240, 0.973);
+height: fit-content;
+overflow-x: hidden;
+
+}
+
+
+/*HEADER*/
+header {
+display: block;
+    position: relative;
+    width: 100%;
+    height:auto;
+    background-color:  rgba(241, 240, 240, 0.856);
+    position: relative;   
+  box-shadow: 2px 2px 5px 8px rgba(233, 232, 232, 0.61),
+               inset 1px 1px 3px 3px rgba(238, 238, 238, 0.404),
+                1px 1px 8px 8px rgba(223, 221, 221, 0.63);
+
+overflow: hidden;
+  
+   z-index: 5; /*By giving this z index the mouse gives priority to header first. Otherwise the area of submenu and 
+   subbody has conflict and selection is not proper. */
+}
+
+header  .innerheader{
+    width: 100%;
+    height: 70px;
+    display: flow-root;
+/*border: 1px solid yellow; */
+
+}
+
+header  .innerheader .logo{
+    position: relative;
+    float: left;
+    width: 15%; 
+    height: calc(100% - 5px);
+
+   /* border: 1px solid yellow; */
+
+}
+
+header  .innerheader .logo a span{
+    display: block;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    text-align: center;
+    font-size: 55px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(27, 6, 6);
+    font-family:'Bauhaus 93';
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color:  rgba(231, 231, 231, 0.623);
+    padding-bottom: 3px;
+    border: 0.5px solid rgba(238, 238, 236, 0.651);
+
+
+}
+
+header  .innerheader .headerempty{
+    width: 2%;
+     margin-right: 20px;
+    /*border: 1px solid green;  */
+    float: right;
+    height: 100%;
+}
+header  .innerheader nav{
+width: fit-content;
+  /* border: 1px solid red ;    */
+    float: right;
+    margin-top: 20px;
+}
+header  .innerheader nav .menu{
+    width: fit-content;
+    height: 100%;
+    float: left;
+
+}
+header  .innerheader nav .menu div{
+    display: inline-block;
+    height: 100%;
+
+}
+
+header  .innerheader nav .menu div a{
+    color: rgb(39, 22, 22);
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+    margin-right: 12px;
+    text-align: center;
+    padding: 1.5px;
+
+}
+
+header  .innerheader nav .menu .home a{
+    display: none;
+    font-family: 'Asap', sans-serif;}
+
+
+/*deal of the day*/
+
+header  .innerheader nav .menu div a h1{
+    display: inline-block;
+    animation: deal 1.75s linear infinite ;
+    color: crimson;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+    padding-right: 1.5px;
+
+
+
+}
+
+header  .innerheader nav .menu div:hover a,
+header  .innerheader nav .menu .deal:hover a h1 span{
+
+    font-weight: 600;
+}
+
+header  .innerheader nav .menu div .underline:hover {
+   /* background-color: rgba(231, 228, 228, 0.897);
+    border-radius: 10px; */
+    border-bottom: 2px solid rgb(243, 188, 85);
+
+}
+
+header  .innerheader nav .menu .deal a h1 span{
+    display: inline;
+
+}
+ 
+header  .innerheader nav .menu .icons{
+    margin-left: 10px; 
+   /* border: 1px solid orange;  */
+
+}
+
+header  .innerheader nav .menu .icons a .fa{
+    font-size: 22px;
+    padding-top: 5px;
+
+}
+header  .innerheader nav .menu .login .fa{
+    font-size: 20px;
+    padding-right: 0px;
+    color: rgb(36, 10, 10);
+
+   
+}
+header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+    display: none;  /*making it visible in small screen*/
+
+}
+
+
+header  .innerheader nav .menu .icons a .fa:hover{
+    font-size: 24px;
+    padding-top: 4px;
+    color: rgb(36, 34, 34);
+
+
+}
+
+header  .innerheader nav .menu .icons a .cartnum{
+display: inline-block;
+    width: 20px;
+    background-color: rgba(241, 240, 240, 0.924);
+    color: rgb(36, 34, 34);
+    border: 0.5px solid rgba(194, 194, 194, 0.808);
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0.5px 0px;
+    text-align:center ;
+    transform: translateY(-1px);
+
+}
+header  .innerheader nav .menu .icons a .cartnum:hover{
+    width: 21px;
+    font-size: 16px;
+
+}
+
+
+
+header  .innerheader nav .menu .deal a h1:nth-of-type(1){
+
+    animation-delay: 0s;
+    
+
+
+}
+
+header  .innerheader nav .menu .deal a h1:nth-of-type(2){
+
+    animation-delay: 0.5s; 
+
+
+
+}
+header  .innerheader nav .menu .deal a h1:nth-of-type(3){
+
+    animation-delay: 1s;
+
+}
+
+
+header  .innerheader nav .menu .deal a h1:nth-of-type(4){
+
+    animation-delay: 1.5s;
+
+
+
+}
+header  .innerheader nav .menu .deal a h1:nth-of-type(5){
+
+    animation-delay: 2s;
+}
+
+
+@keyframes deal{
+
+0% {
+    color: rgb(231, 17, 106);
+
+
+}
+
+10% {
+    color:rgb(209, 62, 123);
+
+
+}20% {
+    color:rgb(156, 55, 156);
+
+
+}30% {
+    color:rgb(145, 47, 145);
+
+
+}
+
+40% {
+  
+    color:rgb(142, 28, 223);
+
+
+}
+50% {
+   
+    color: rgb(93, 14, 150);
+
+
+}
+60% {
+   
+    color: rgb(236, 40, 105);
+}
+70% {
+    
+    color:  rgb(189, 68, 108);
+
+
+}
+80% {
+    
+    color: rgb(243, 243, 128);
+
+
+}
+85% {
+    
+    color: rgb(230, 87, 51);
+
+
+}
+
+95% {
+   
+    color: rgb(236, 78, 4);
+
+
+}
+100% {
+  
+    color: rgb(216, 38, 38);
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 1410px) {
+  
+    header  .innerheader .logo{
+        width: 15%;
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 50px; 
+        padding-top: 0px;
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 18px;
+        float: right;
+        margin-right: 9px;
+
+    }
+    
+    
+    header  .innerheader nav .menu div a{
+        font-size: 20px;
+        margin-right: 7px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 20px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none; 
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 20px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 20px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 22px;
+        padding-top: 4px;
+    
+    }
+   
+}
+
+@media screen and (max-width: 1200px) {
+  
+    header  .innerheader .logo{
+        width: 12%;
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 45px; 
+        padding-top: 1px;  
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 18px;
+        float: right;
+        margin-right: 10px;
+
+    }
+    
+    
+    header  .innerheader nav .menu div a{
+        font-size: 19px;
+        margin-right: 8px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 19px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 19px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 18px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 20px;
+        padding-top: 4px;
+    
+    }
+
+
+ 
+}
+
+@media only screen and (max-width: 1015px) {
+  
+    header  .innerheader .logo{
+        width: 12%;
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 42px; 
+        padding-top: 2px;  
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 18px;
+        margin-right: 5px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 18px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 18px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 18px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 20px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+    }
+
+@media only screen and (max-width: 945px) {
+  
+    header  .innerheader .logo{
+        width: 10%;
+        height: calc(100% - 0px);
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 40px; 
+        padding-top: 3px;  
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 20px;
+       
+    }
+    header  .innerheader nav{
+        height: calc(100% - 20px);
+        margin-top: 20px;
+        margin-right: 10px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 16px;
+        margin-right: 5px;
+        padding: 1px;
+    
+
+    }
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 16px;  
+        padding-right: 1px;   
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 17px;
+        padding-right: 2.5px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 18px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 20px;
+        padding-top: 4px;
+    
+    }
+
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+        width: 8px;
+        height: 8px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 0px;
+        overflow: hidden;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 10px;
+        height: 10px;
+        margin-left: 4px;
+    }
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 5px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 5px;
+        margin-bottom: 4px;
+    }
+    
+    
+   
+}
+
+@media only screen and (max-width: 846px) {
+  
+   
+
+    header  .innerheader .logo{
+        width: 8%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 28px; 
+        padding-top: 12px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 15px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 20px;
+        margin-right: 12px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 14px;
+        margin-right: 3px;
+        padding: 1px;
+        font-weight: 500;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 14px;  
+        font-weight: 500;
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 15px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 15px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 16px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+   
+}
+
+@media only screen and (max-width: 715px) {
+  
+    header  .innerheader{
+
+        height: 60px;
+    }
+
+    header  .innerheader .logo{
+        width: 7.5%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 24px; 
+        padding-top: 12px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 18px;
+        margin-right: 10px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 12px;
+        margin-right: 3px;
+        padding: 1px;
+        font-weight: 500;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 12px;  
+        font-weight: 500;
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 13px; 
+        padding-right: 0px;
+
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.2px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 15px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+   
+}
+
+@media only screen and (max-width: 628px) {
+  
+    header  .innerheader {
+        height: 55px;
+    }
+
+    header  .innerheader .logo{
+        width: 7%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 22px; 
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 17px;
+        margin-right: 12px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 12px;
+        margin-right: 1.5px;
+        padding: 1px;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 12px;  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store,
+    header  .innerheader nav .menu .login .logintxt{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 13px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 0.8px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 14px;
+        padding-top: 4px;
+    
+    }    
+   
+}
+
+@media only screen and (max-width: 570px) {
+  
+    
+
+    header  .innerheader .logo{
+        width: 7%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 20px; 
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 15px;
+        margin-right: 8px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 11px;
+        margin-right: 1.5px;
+        padding: 1px;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 11px;  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store,
+    header  .innerheader nav .menu .login .logintxt{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 13px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 0.8px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 14px;
+        padding-top: 4px;
+    
+    }    
+   
+}
+
+@media only screen and (max-width: 528px) {
+  
+    header  .innerheader {
+        height: 50px;
+    }
+
+    header  .innerheader .logo{
+        width: 7%;
+        height: calc(100% - 0px);
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 18px; 
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 12px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 12px;
+        margin-right: 8px;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 9px;
+        margin-right: 1.5px;
+        padding: 1px;
+    
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 9px;  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store,
+    header  .innerheader nav .menu .login .logintxt{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 11px;
+
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 0.8px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 11px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 13px;
+        padding-top: 4px;
+    
+    }    
+   
+}
+
+
+@media only screen and (max-width: 458px) {
+  
+    header .innerheader{
+        height: 40px;
+
+    }
+
+    header  .innerheader .logo{
+        display: inline-block;
+        width: 6.5%;
+        height: calc(100% - 0px);
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 14px; 
+        display: block;
+        padding-top: 10px;
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 8px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 8px;
+        height: auto;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 10px;
+        margin-right: 1.5px;
+        padding: 1px;
+        font-weight: 600;
+    
+    }
+
+    header  .innerheader nav .menu div .logintxt,
+    #wedding{
+        display: none;
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 10px;  
+        padding-right: 1px; 
+        font-weight: 600;
+  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 12px;
+        margin-left: 2px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 13px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 8px;
+        padding-top: 4px;
+    
+    }   
+      
+}
+
+@media only screen and (max-width: 375px) {
+  
+    header .innerheader{
+        height: 40px;
+
+    }
+
+    header  .innerheader .logo{
+        display: inline-block;
+        width: 6.5%;
+        height: calc(100% - 0px);
+   
+        
+
+
+    }
+    header  .innerheader .logo a span{
+        font-size: 14px; 
+        display: block;
+        padding-top: 10px;
+
+
+    }
+    
+    header  .innerheader .headerempty{
+        width: 0%;
+         margin-right: 5px;
+       
+    }
+    header  .innerheader nav{
+        margin-top: 9px;
+        height: auto;
+
+    }
+   
+    
+    header  .innerheader nav .menu div a{
+        font-size: 9px;
+        margin-right: 1px;
+        padding: 1px;
+        font-weight: 600;
+    
+    }
+
+    header  .innerheader nav .menu div .logintxt,
+    #wedding{
+        display: none;
+    }
+
+     /*deal of the day*/
+    header  .innerheader nav .menu div a h1{
+        
+        font-size: 9px;  
+        padding-right: 0.6px; 
+        font-weight: 600;
+  
+    }
+    
+    /*Store locator*/ 
+    header  .innerheader nav .menu .store{
+        display: none;
+    }
+    header  .innerheader nav .menu .login .fa{
+        font-size: 10px;
+        margin-left: 2px;
+    
+       
+    }
+
+    header  .innerheader nav .menu .icons a .fa-location-arrow{
+
+        display: inline-block;  /*making it visible in small screen*/
+    }
+   
+    
+    header  .innerheader nav .menu .icons{
+        margin-left: 1.5px; 
+       /* border: 1px solid orange;  */
+    }
+    
+    header  .innerheader nav .menu .icons a .fa{
+        font-size: 10px;
+        padding-top: 5px;
+    
+    }
+    
+    header  .innerheader nav .menu .icons a .fa:hover{
+        font-size: 8px;
+        padding-top: 4px;
+    
+    }
+
+    
+    
+   
+}
+
+
+
+
+/*SUB MENU*/
+
+.sub_catalogue{
+    display: none;  
+    /*display: flow-root;  */
+    width: calc(100% - 100px);
+    height: fit-content;
+    position: absolute;
+    top: 78px;
+    left: 55px;
+   /* border: 1px solid red; */
+    z-index: 11;
+    background-color: rgba(238, 236, 236, 0.863);
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+.sub_catalogue .left{
+    float: left;
+    width: calc(70% - 30px);
+    height: 100%;
+    margin-left: 20px;
+   /* border: 1px solid blue; */
+
+}
+
+.sub_catalogue .left .sub_menu{
+    height: 100%;
+    width: calc(33% - 20px);
+   /* border: 1px solid violet; */
+    float: left;
+    padding-bottom: 10px;
+}
+
+
+.sub_catalogue .left .sub_menu h1{
+    text-align: left;
+    font-size: 28px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(41, 7, 7);
+    text-shadow: 0 0 3px rgba(87, 80, 80, 0.527);
+}
+.sub_catalogue .left .sub_menu p{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(29, 26, 26);
+    padding-bottom: 0px;
+    text-transform: capitalize;
+
+}
+
+.sub_catalogue .left .sub_menu p:hover{
+    font-weight: bold;
+    color: rgb(42, 46, 15);
+}
+
+
+.sub_catalogue .right{
+    float: left;
+    width: calc(30% - 0px);
+    height: 100%;
+  /*  border: 1px solid indianred; */
+
+}
+.sub_catalogue .right img{
+    width: calc(100% - 20px);
+    height: calc(80% - 20px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*SUB MEN*/
+.sub_men{
+    display: none;  
+    /*display: flow-root;  */
+    width: calc(100% - 100px);
+    height: 400px;
+    position: absolute;
+    top: 78px;
+    left: 55px;
+   /* border: 1px solid red; */
+    z-index: 11;
+    background-color: rgba(238, 236, 236, 0.863);
+    cursor: pointer;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+.sub_men .sub_menu1{
+    width: calc(25% - 10px);
+    height: 100%;
+   /* border: 1px solid red; */
+    float: left;
+    margin-right: 5px;
+
+
+}
+
+.sub_men .sub_menu1 h1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(71, 14, 14);
+    text-shadow: 0 0 3px rgba(87, 80, 80, 0.527);
+
+
+}
+.sub_men .sub_menu1 a img{
+    display: block;
+    width: calc(100% - 20px);
+    height: 320px;
+    margin: 10px;
+    border-radius: 10px;
+   /* border: 1px solid violet; */
+}
+
+.sub_men .sub_menu1 a img:hover{
+    width: calc(100% - 16px);
+    height: 324px;
+    margin: 8px;
+}
+
+
+/*SIDEBAR BTN*/
+header  .innerheader .sidebartbtn{
+    position: relative;  
+    float: right;
+   
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(189, 188, 188, 0.671);
+    width: 43px;
+    height: 43px;
+    margin-left: 8px;
+    margin-right: 30px;
+    margin-top: 12px;
+
+}
+
+header  .innerheader .sidebartbtn:hover{
+
+    width: 45px;
+    height: 45px;
+    margin-left: 6.5px;
+
+
+
+
+}
+header  .innerheader .sidebartbtn .p {
+    width: 100%;
+    height:calc(100% - 10px) ; 
+    padding-top: 10px;
+    padding-left: 3px;
+
+
+
+}
+
+header  .innerheader .sidebartbtn .p p{
+    background-color: rgb(22, 22, 22);
+    width: 80%;
+    height: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    padding-left: 3px;
+    transition: all 0.1s linear;
+}
+
+/*During the transition it will be cross  */
+header  .innerheader .sidebartbtn .p .bar1{
+
+transform: rotate(-135deg) translate(-13px , 11px);
+width: 50%;    
+
+
+}
+header  .innerheader .sidebartbtn .p .bar2{
+
+    opacity: 1;
+
+}
+header  .innerheader .sidebartbtn .p .bar3{
+
+    transform: rotate(-45deg) translate(15px , 9px);
+    width: 50%;
+
+}
+
+@media screen and (max-width: 1200px) {
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+       
+        width: 38px;
+        height: 38px;
+        margin-left: 5px;
+        margin-right:15px;
+        margin-top: 10px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 40px;
+        height: 40px;
+        margin-left: 4px;   
+    }
+
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 10px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    header  .innerheader .sidebartbtn .p .bar2{
+        transform: translateX(2.5px);
+        width: 70%;
+    }
+
+header  .innerheader .sidebartbtn .p .bar3{
+            
+ transform: rotate(-45deg) translate(13.5px , 12px);
+ width: 40%;
+            
+            }
+
+}
+@media screen and (max-width: 1000px) {
+ /*SIDEBAR BTN*/
+ header  .innerheader .sidebartbtn{
+       
+    width: 38px;
+    height: 38px;
+    margin-left: 3px;
+    margin-right: 15px;
+    margin-top: 12px;
+
+}
+
+header  .innerheader .sidebartbtn:hover{
+
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+header  .innerheader .sidebartbtn .p {
+      
+    padding-top: 10px;
+    padding-left: 3px;
+
+}
+
+header  .innerheader .sidebartbtn .p p{
+    width: 80%;
+    height: 4px;
+    margin-bottom: 4px;
+}
+
+header  .innerheader .sidebartbtn .p .bar2{
+            transform: translateX(2.5px);
+            width: 70%;
+        }
+
+header  .innerheader .sidebartbtn .p .bar3{
+                
+     transform: rotate(-45deg) translate(13.5px , 12px);
+     width: 40%;
+                
+                }
+
+}
+
+
+@media screen and (max-width: 830px) {
+     /*SIDEBAR BTN*/
+     header  .innerheader .sidebartbtn{
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 15px;
+        overflow: hidden;
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 38px;
+        height: 38px;
+        margin-left: 4px;
+    }
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 8px;
+        padding-left: 3px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    
+}
+
+@media screen and (max-width: 710px) {
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+       width: 35px;
+       height: 35px;
+       margin-left: 5px;
+       margin-right: 10px;
+       margin-top: 11px;
+       overflow: hidden;
+   
+   }
+   
+   header  .innerheader .sidebartbtn:hover{
+   
+       width: 38px;
+       height: 38px;
+       margin-left: 4px;
+   }
+   header  .innerheader .sidebartbtn .p {
+     
+       padding-top: 8px;
+       padding-left: 3px;
+   
+   }
+   
+   header  .innerheader .sidebartbtn .p p{
+       width: 80%;
+       height: 4px;
+       margin-bottom: 4px;
+   }
+   
+}
+
+@media screen and (max-width: 500px) {
+    /*SIDEBAR BTN*/
+    header  .innerheader .sidebartbtn{
+       width: 32px;
+       height: 30px;
+       margin-left: 2px;
+       margin-right: 4px;
+       margin-top: 5px;
+      overflow: hidden; 
+   
+   }
+   
+   header  .innerheader .sidebartbtn:hover{
+   
+       width: 30px;
+       height: 30px;
+       margin-left: 1.5px;
+   }
+   header  .innerheader .sidebartbtn .p {
+      
+    padding-top: 5px;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+
+}
+
+header  .innerheader .sidebartbtn .p p{
+    width: 80%;
+    height: 3.5px;
+    margin-bottom: 2px;
+    margin-top: 2.6px;
+}
+header  .innerheader .sidebartbtn .p .bar1{
+
+    transform: rotate(-135deg) translate(-8.5px , 9px);
+    width: 40%;    
+    
+    
+    }
+header  .innerheader .sidebartbtn .p .bar2{
+transform: translateX(2.5px);
+width: 70%;
+    }
+
+header  .innerheader .sidebartbtn .p .bar3{
+    
+        transform: rotate(-45deg) translate(8.5px , 8.5px);
+        width: 40%;
+    
+    }
+}
+@media screen and (max-width: 400px) {
+     /*SIDEBAR BTN*/
+     header  .innerheader .sidebartbtn{
+        width: 28px;
+        height: 28px;
+        margin-left: 2px;
+        margin-right: 4px;
+        margin-top: 4px;
+       overflow: hidden; 
+    
+    }
+    
+    header  .innerheader .sidebartbtn:hover{
+    
+        width: 30px;
+        height: 30px;
+        margin-left: 1.5px;
+    }
+    header  .innerheader .sidebartbtn .p {
+      
+        padding-top: 4px;
+        padding-left: 1.5px;
+        padding-right: 1.5px;
+    
+    }
+    
+    header  .innerheader .sidebartbtn .p p{
+        width: 80%;
+        height: 3.5px;
+        margin-bottom: 2px;
+        margin-top: 2.6px;
+    }
+    header  .innerheader .sidebartbtn .p .bar1{
+
+        transform: rotate(-135deg) translate(-8.5px , 9px);
+        width: 40%;    
+        
+        
+        }
+header  .innerheader .sidebartbtn .p .bar2{
+    transform: translateX(2.5px);
+    width: 70%;
+        }
+
+ header  .innerheader .sidebartbtn .p .bar3{
+        
+            transform: rotate(-45deg) translate(8.5px , 8.5px);
+            width: 40%;
+        
+        }
+}
+
+
+
+
+ /*LOGIN BOX*/
+
+
+/*LOGIN Pop up page*/
+
+.loginbox{
+    display: none;
+    z-index: 10;
+    border: none;
+    box-shadow: 2px 2px 2px 5px rgba(211, 208, 208, 0.719);
+    width: 900px;
+    height: 500px;
+  position: absolute;
+  left:25%; top: 100px;
+  /*margin: 50px auto; */
+    border-radius: 10px;
+    background-color: rgba(243, 244, 245, 0.712); 
+    animation: login 0.3s linear;
+    transition: all linear;
+
+}
+
+@keyframes login{
+    from{ transform: scale(0);
+    opacity: 0;}
+    to{transform: scale(1);
+    opacity: 1;}
+}
+
+.loginbox .close{
+    position: absolute;
+    top: 10px;  right: 10px;
+    font-size: 30px;
+    color:white;
+    z-index: 1;
+   /* border: 2px solid violet;*/
+
+}
+
+.loginbox .close:hover{
+    color: rgb(41, 14, 2);
+    font-size: 33px;
+    top:8px; 
+
+
+}
+.loginbox .signin {
+position: absolute;
+width: calc(50% - 20px);
+height: 100%;
+display: inline-block;
+/*border: 1px solid green;*/
+
+
+}
+
+.loginbox .signin h1{
+
+ text-transform: uppercase;
+ font-family: 'Signika', sans-serif;
+     font-weight: 700;
+    font-size: 55px;
+    color: rgb(83, 18, 18);
+    text-align: center;
+    margin-top: 45px;
+    width: 99%;
+    height: fit-content;
+    flex-wrap: nowrap;
+ display: block;
+  /*  border: 2px solid violet;*/
+
+}
+
+.loginbox .signin .links{
+    display: block;
+    position: relative;
+   /* border: 2px solid blue; */
+    height: fit-content;
+    width: 100%;
+
+    margin-top: 10px;
+text-align: center;
+
+
+}
+
+.loginbox .signin .links div{
+
+    display: inline-block;
+    height: 60px;
+    width: 70px;
+    margin-right:15px ;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 2px 1px 0px 1px grey,
+                2px 1px 0px 1px grey,
+                inset 1px 1px 2px 1px rgb(199, 199, 199),
+                1px 1px 0px 1px grey;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.loginbox .signin .links div:hover {
+
+    background-color: rgb(223, 222, 222);
+    height: 62px;
+    width: 72px;
+    margin-right:14px ;
+
+
+
+}
+.loginbox .signin .links div .fa{
+
+font-size: 40px;
+padding-top: 10px;
+padding-left: 8px;
+color: rgb(214, 16, 16);
+
+}
+
+.loginbox .signin .links div .fa-facebook{
+    padding-left: 5px;
+    color: blue;
+
+}
+
+.loginbox .signin .links div .fa-linkedin{
+        color: rgb(34, 34, 73);
+    }
+
+
+
+
+
+.loginbox .signin form{
+
+    position: relative;
+    margin-top: 20px;
+    height: fit-content;
+  /*  border: 1px solid black;  */
+}
+
+.loginbox .signin form label{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif;
+    display: block;
+    color: rgb(31, 30, 30);
+    margin-bottom: 5px;
+
+    
+}
+.loginbox .signin form input{
+    color: grey;
+    width: 85%;
+    height: 35px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    0 5px 5px rgba(5, 5, 5, 0.521);
+}
+
+  
+.loginbox .signin form input:focus{
+        outline: none;
+  }
+
+.loginbox .signin form  .fa{
+
+    position: absolute; 
+    font-size: 22px;
+    transform: translate(-30px , 12px);
+  }
+
+  .loginbox .signin form  .fa:hover{
+
+    font-size: 24px;
+    transform: translate(-32px , 11px);
+  }
+.loginbox .signin form .button{
+
+    display: block;
+  }
+
+.loginbox .signin form .button:focus{
+        outline: none;
+
+ }
+
+ .loginbox .signin h5{
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(75, 74, 74);
+    padding-top: 10px;
+ }
+ .loginbox .signin .remember {
+     display: block;
+     width: 100%;
+    /* border: 1px solid blue;*/
+
+ }
+
+ .loginbox .signin .remember input{
+     width: 18px;
+     height: 16px;
+     box-shadow: none;
+     display: inline-block;
+ }
+
+
+ .loginbox .signin .remember p{
+    flex-wrap: nowrap;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Signika', sans-serif;
+    color: rgb(109, 108, 108);
+
+
+}
+
+.loginbox .signin .button{
+
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    background-color: rgba(238, 27, 80, 0.904);
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    position: relative;
+    cursor: pointer;
+}
+
+.loginbox .signin .button  span{
+
+    width: 100%;
+    height: 100%;
+}
+
+.loginbox .signin .button span::after{
+    content: '\00bb';
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    color: white;
+    font-size: 46px;
+    top:-12px;
+    right: 25px;
+    transition: 0.5s;
+
+}
+.loginbox .signin .button:hover{
+    background-color: rgba(233, 17, 71, 0.904);
+
+}
+
+.loginbox .signin .button:hover span::after{
+    opacity: 1;
+    color: white;
+}
+
+.loginbox .signin .button:hover span{
+    padding-left: 0px;
+    font-size: 27px;
+
+}
+
+.loginbox .signin .forgot{
+
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: rgb(42, 42, 196);
+}
+
+.loginbox .signup{
+
+        width: calc(50% + 10px);
+        height: 100%;
+        position: absolute; right: 0em;
+      /*  border: 1px solid orange;*/
+       display: inline-block;
+       background-color: rgba(241, 30, 65, 0.801);
+       border-bottom-right-radius: 10px;
+       border-top-right-radius: 10px;
+       
+ }
+
+ .loginbox .signup h2{
+    font-family: 'Signika', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+ }
+
+ .loginbox .signup h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    font-weight: 500;
+ }
+
+ .loginbox .signup span{
+    padding-left:8px;
+ }
+
+
+ 
+ .loginbox .signup button{
+     display: block;
+     width: 200px;
+     height: 40px;
+     background-color: transparent;
+     border: 2.5px solid rgba(230, 220, 220, 0.767);
+     border-radius: 10px;
+     margin: 25px auto;
+     font-size: 20px;
+     color: rgb(236, 222, 222);
+ }
+
+ .loginbox .signup button:hover{
+
+    width: 202px;
+    height: 42px;
+    background-color:rgba(241, 30, 65, 0.801);
+    margin: 24px auto;
+
+ }
+
+ .loginbox .signup button:focus{
+     outline: none;
+ }
+
+/*MIDDLE BODY*/
+
+
+.mainbody{
+    display: block;
+    position: relative;
+   /* border: 10px solid red; */
+    height: auto;
+
+
+}
+
+/*  LEFTSIDE  */
+
+.mainbody .leftside{
+    display: block;
+    position: absolute;
+    right: 0px; 
+    width: 0px ; 
+ /* border: 1px solid red;  */
+    z-index: 5;
+    transform: translateY(-30px);
+    overflow: hidden;
+    transition: all 200ms linear;
+
+}
+
+/*SIDEBAR*/
+
+
+/*sidebar is the class that we will add through javascript for sliding effect of sidbar*/
+
+.mainbody .leftside .sidebar{
+    position:relative;
+    float: right;
+    width: 300px;
+    height:100%;
+    background-color: rgba(241, 225, 228, 0.863);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;   
+    box-shadow: 5px 8px 5px rgba(240, 192, 204, 0.89),
+                -1px 0px 3px 1px rgba(243, 216, 222, 0.89);
+    z-index: 5;
+    user-select: none;
+
+}
+.mainbody .leftside  .sidebar  h2{
+    width: 100%;
+    background-color: rgba(250, 212, 231, 0.801);
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+.mainbody .leftside  .sidebar ul{
+   /* border: 1px solid green; */
+    width: calc(100% - 0px);
+
+
+
+}
+
+
+.mainbody .leftside  .sidebar ul li{
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 218, 225, 0.877);
+    border-top: 1px solid  rgb(248, 215, 224);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+ 
+}
+
+.mainbody .leftside  .sidebar ul li:first-of-type{
+    margin-top: 10px;
+    border-top: none;
+
+}
+
+.mainbody  .leftside  .sidebar ul li a{
+    display: block;
+    color:rgb(37, 7, 22);
+    font-weight: 500;
+    font-size: 19px;
+    font-family: 'Mukta', sans-serif;
+    padding-left:10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mainbody .leftside  .sidebar ul li a .fa{
+        display: inline-block;
+        padding-right: 7px;
+
+}
+
+
+.mainbody  .leftside  .sidebar ul li:hover {
+    font-size:20px; 
+    background-color:  rgb(245, 212, 217) ;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color:rgb(80, 16, 48);
+
+}
+
+ /*Note: even in the hover for the text edit we need to go down to the heirarchy like class as for 
+   editting the bold and color we need to go down upto a as down below*/
+.mainbody .leftside  .sidebar ul li:hover a{   
+font-size: 21px;
+font-weight: 600;
+
+
+}
+
+
+.mainbody .leftside  .sidebar .sociallinks{ 
+    width: fit-content;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    
+    
+}
+
+.mainbody .leftside  .sidebar .sociallinks a{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 8px;
+
+}
+
+.mainbody .leftside  .sidebar .sociallinks a:hover{
+    border-radius:5px ;
+    color: rgb(17, 17, 17);
+    background-color:rgba(243, 205, 224, 0.842);
+
+
+
+}
+
+
+
+
+/*subbody*/
+
+.mainbody .subbody{
+    display: block;
+    position: relative;
+    width: calc(100% - 0px);
+    height: auto;
+  /* border: 1px solid yellow;  */
+}
+
+.mainbody .subbody .rhydhm{
+    margin-top: 30px;
+    margin-left: 0px;
+    position: relative;
+    width: calc(100% - 0px);
+    height: fit-content;
+    /* border: 1px solid purple;*/
+}
+
+.mainbody .subbody .rhydhm h1{
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: 550;
+    letter-spacing: 3px;
+    color: rgb(209, 61, 61);
+    text-shadow: 2px 1px 6px  rgb(153, 129, 49);
+   /* border: 1px solid green; */
+
+}
+
+
+.mainbody .subbody .rhydhm h1:hover{
+    font-size: 51px;
+    letter-spacing: 3.5px;
+
+
+
+}
+
+.mainbody .subbody .rhydhm h2{
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow:4px  rgb(141, 181, 219);
+    font-size: 23px;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(50, 122, 128);
+    text-shadow: 0.5px 0.5px rgb(80, 67, 25);
+
+   padding-bottom: 9px;
+}
+
+
+/*  marquee */
+
+.mainbody .subbody .rhydhm marquee{
+    position: absolute; 
+    top: 115%;
+    width: 100%;
+    left: 0px;
+    height: 20px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: rgba(219, 217, 217, 0.637);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0),  inset 0 0px 0px rgba(0, 0, 0, 0),
+    inset 0 0px 0px rgba(0, 0, 0, 0),
+    0 1px 8px rgba(0, 0, 0, 0.432);  
+      color: rgb(86, 94, 102);
+}
+
+.mainbody .subbody marquee span{
+
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.mainbody .subbody marquee .promo:hover{
+
+    font-weight: 650;
+    color: rgb(25, 133, 127);
+    text-decoration: underline;
+
+}
+
+
+
+/*SLIDER*/
+
+.mainbody .subbody .slider{
+
+    /*border: 1px solid red;    see use border to know the area we are getting for easy editting */
+    width:calc(100% - 0px); 
+    height: 410px;
+    position: relative; /*from position to transform it is easy to positioning of image on any part of page.*/
+    box-shadow: none;
+    background-image: url('Database/images/Banner/banner2.jpg');
+    animation: slider 20s infinite linear;
+    background-size: 100% 100%; /*fully covers image once*/
+    text-align: center;
+    margin-top: 51px;
+
+
+
+}
+@keyframes slider{
+
+    0%{       
+         background-image: url('Database/images/Banner/banner2.jpg');
+        background-size: 100% 100%;
+    }
+
+    10%{
+        background-image: url('Database/images/Banner/banner2.jpg');
+        background-size: 100% 100%;
+    }
+
+    12%{
+        background-image: url('Database/images/Banner/banner1.jpg');
+        background-size: 100% 100%;
+    }
+
+    22%{
+        background-image: url('Database/images/Banner/banner1.jpg');
+        background-size: 100% 100%;
+    }
+
+    24%{
+        background-image: url('Database/images/Banner/banner11.jpg');
+        background-size: 100% 100%;
+    }
+
+    34%{
+        background-image: url('Database/images/Banner/banner11.jpg');
+        background-size: 100% 100%;
+    }
+
+    36%{
+        background-image: url('Database/images/Banner/banner5.png');
+        background-size: 100% 100%;
+    }
+
+    
+    46%{
+        background-image: url('Database/images/Banner/banner5.png');
+        background-size: 100% 100%;
+    }
+    
+    48%{
+       background-image: url('Database/images/Banner/banner7.jpg');
+        background-size: 100% 100%;
+    }
+    
+    58%{
+        background-image: url('Database/images/Banner/banner7.jpg');
+        background-size: 100% 100%;
+    }
+    
+    60%{
+        background-image: url('Database/images/Banner/banner.jpg');
+        background-size: 100% 100%;
+    }
+
+    
+    70%{
+        background-image: url('Database/images/Banner/banner.jpg');
+        background-size: 100% 100%;
+    }
+    
+    72%{
+        background-image: url('Database/images/Banner/banner4.jpg');
+        background-size: 100% 100%;
+    }
+    
+    82%{
+        background-image: url('Database/images/Banner/banner4.jpg');
+        background-size: 100% 100%;
+    }
+    
+    
+    84%{
+        background-image: url('Database/images/Banner/banner8.jpg');
+        background-size: 100% 100%;
+    }
+    
+    
+    100%{
+        background-image: url('Database/images/Banner/banner8.jpg');
+        background-size: 100% 100%;
+    }
+
+}
+
+/*CONTENT*/
+
+/*QUICK ACCESS TOOLBAR*/
+
+.mainbody .subbody .quickaccess{
+    display: block;
+    position: relative;
+    margin-top: 30px ;
+     margin-bottom: 20px;
+    width: calc(100% - 10px);
+    height: 60px;
+    /* border: 1px solid rgb(29, 165, 51);  */
+       padding-bottom: 5px;
+
+
+}
+
+
+/*search bar */
+.mainbody .subbody .quickaccess .search{
+    position: relative;
+    float: left;
+    margin-left: 60px;
+    width: 35%;
+    height:100%;
+  /* border: 1px solid rgb(29, 165, 51); */
+    padding-left: 25px;
+
+}
+
+.mainbody .subbody .quickaccess .search form{
+    width: 100%;
+    height:100%;
+
+}
+.mainbody .subbody .quickaccess .search form input{
+
+    position: relative;
+    width: 90%;
+    height: calc(95% - 20px);
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    0 5px 5px rgba(5, 5, 5, 0.521);
+
+    
+}
+
+.mainbody .subbody .quickaccess .search form input:focus{
+    outline:none;
+}
+
+.mainbody .subbody .quickaccess .search form .searchbtn{
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    width: 12%;
+    height: 80%;
+    overflow: hidden;
+    /*border: 1px solid red;  */
+
+}
+
+.mainbody .subbody .quickaccess .search form .searchbtn .fa{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 13px;
+    margin-right: 4px;
+    margin-left: 4px;
+
+
+}
+
+.mainbody .subbody .quickaccess .search form .searchbtn button{
+    background-color: transparent;   
+    border: none;
+  /*  border: 1px solid rgb(255, 0, 234);  */
+
+}
+
+.mainbody .subbody .quickaccess .search form .searchbtn .fa:hover{
+    font-size: 24px;
+    padding-top: 11px;
+
+
+}
+
+
+.mainbody .subbody .quickaccess .currency{
+    float: left;
+    position: relative;
+    margin-left: 60px;
+    width: calc(10% - 0px);
+    height: calc(100% - 0px);
+    margin-left: 30px;
+    width: calc(26% - 10px);
+   /* border: 1px solid rgb(29, 156, 165);  */
+
+}
+
+
+
+
+.mainbody .subbody .quickaccess .currency select{
+
+            width: 80%;
+            height: 80%;
+            font-size: 20px;
+            padding-left: 15px;
+            border-radius: 10px;
+            border: none;
+            color: rgb(78, 78, 78);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+            inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+            0 5px 5px rgba(0, 0, 0, 0.445);
+    font-size: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: capitalize;
+   
+
+
+}
+
+
+
+
+
+.mainbody .subbody .quickaccess .tools{
+    float: left;
+    position: absolute;
+    left: 75%;
+    width: calc(25% - 10px);
+    height: 100%;
+    /*border: 1px solid rgb(156, 165, 29);  */
+
+}
+
+.mainbody .subbody .quickaccess .tools a{
+
+    padding-right: 15px;
+}
+
+.mainbody .subbody .quickaccess .tools a:first-child{
+
+    padding-left: 30px;
+}
+
+.mainbody .subbody .quickaccess .tools a .fa{
+    padding-top: 5px;
+        color: black;
+                    font-size: 25px;
+}
+
+.mainbody .subbody .quickaccess .tools a .fa:hover{
+
+    font-size: 26px;
+    font-weight: 700;
+
+
+}
+
+/*CSS GRID*/
+
+.mainbody .subbody .grid{
+   /* border: 1px solid green;  */
+    width:calc( 100% - 80px);
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+   border-radius: 10px;
+
+}
+
+/*GRID1*/
+
+.mainbody .subbody .grid .grid1{
+
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    background-color: rgba(235, 235, 235, 0.829);
+    border: 2px solid rgba(235, 235, 235, 0.829);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.mainbody .subbody .grid .grid1 h1{
+
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 25px;
+    padding-top: 22px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(29, 28, 28);
+    text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+}
+
+.mainbody .subbody .grid .grid1 .row{
+
+    width: 100%;
+    height: 300px;
+    padding-left:25px;
+    padding-bottom: 20px;
+
+
+
+
+}
+
+.mainbody .subbody .grid .grid1 .row .items{
+
+    float: left;
+    width: calc(25% - 30px);
+    height: 100%;
+    padding-right: 25px;
+}
+
+
+
+.mainbody .subbody .grid .grid1 .row .items a img{
+
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+
+
+}
+
+.mainbody .subbody .grid .grid1 .row .items a img:hover{
+    width: 101%;
+    height: 273px;
+
+
+}
+.mainbody .subbody .grid .grid1 .row .items h2 {
+
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(41, 41, 41, 0.288),
+    inset 0 5px 15px rgba(0, 0, 0, 0.123),
+    0 5px 15px rgba(0, 0, 0, 0.295);
+
+}
+
+
+.mainbody .subbody .grid .grid1 .row .items h2 a{
+
+    color: black;
+}
+
+.mainbody .subbody .grid .grid1 .row .items h2 a:hover{
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*GRID 2*/
+
+.mainbody .subbody .grid .grid2{
+
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    background-color: rgba(235, 235, 235, 0.829);
+    border: 2px solid rgba(235, 235, 235, 0.829);
+        border-radius: 10px;
+    margin-top: 30px;
+    padding-top: 0px;
+}
+.mainbody .subbody .grid .grid2 h1{
+
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(29, 28, 28);
+    text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+}
+
+.mainbody .subbody .grid .grid2 .row{
+
+    width: 100%;
+    height: 300px;
+    padding-left:25px;
+    padding-bottom: 20px;
+
+
+
+
+}
+
+.mainbody .subbody .grid .grid2 .row .items{
+
+    float: left;
+    width: calc(20% - 35px);
+    height: 100%;
+    padding-right: 25px;
+}
+
+
+
+.mainbody .subbody .grid .grid2 .row .items a img{
+
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+
+
+}
+
+.mainbody .subbody .grid .grid2 .row .items a img:hover{
+    width: 101%;
+    height: 273px;
+
+
+}
+.mainbody .subbody .grid .grid2 .row .items h2 {
+
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(41, 41, 41, 0.288),
+    inset 0 5px 15px rgba(0, 0, 0, 0.123),
+    0 5px 15px rgba(0, 0, 0, 0.295);
+
+}
+
+
+.mainbody .subbody .grid .grid2 .row .items h2 a{
+
+    color: black;
+}
+
+.mainbody .subbody .grid .grid2 .row .items h2 a:hover{
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*  GRID 3*/
+
+.mainbody .subbody .grid .grid3{
+
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(235, 235, 235, 0.829);
+    border: 2px solid rgba(235, 235, 235, 0.829);
+        border-radius: 10px;
+    overflow: hidden;
+    margin-top: 35px;
+    padding-bottom: 30px;
+
+}
+.mainbody .subbody .grid .grid3 h1{
+
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: rgb(29, 28, 28);
+    font-family: 'Bree Serif', serif;
+    text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+}
+
+.mainbody .subbody .grid .grid3 .row{
+
+    width: 100%;
+    height: 300px;
+    padding-left:25px;
+    padding-bottom: 20px;
+    
+
+
+
+
+}
+
+.mainbody .subbody .grid .grid3 .row .items{
+
+    float: left;
+    width: calc(33.33% - 30px);
+    height: 100%;
+    padding-right: 25px;
+}
+
+
+
+.mainbody .subbody .grid .grid3 .row .items a img{
+
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+
+
+}
+
+.mainbody .subbody .grid .grid3 .row .items a img:hover{
+    width: 101%;
+    height: 303px;
+
+
+}
+.mainbody .subbody .grid .grid3 .row .items h2 {
+
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(41, 41, 41, 0.288),
+    inset 0 5px 15px rgba(0, 0, 0, 0.123),
+    0 5px 15px rgba(0, 0, 0, 0.295);
+
+}
+
+
+.mainbody .subbody .grid .grid3 .row .items h2 a{
+
+    color: black;
+}
+
+.mainbody .subbody .grid .grid3 .row .items h2 a:hover{
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/*CUSTOMER ASSURANCE*/
+
+.mainbody .subbody .costumerassurance{
+   
+ /* border: 1px solid green; */
+    width: calc(100% - 100px);
+    height: 100px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 60px;
+    z-index: 45;
+
+}
+
+.mainbody .subbody .costumerassurance .parts{
+position: relative;
+    width:  calc( 25% - 15px);
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    float: left;
+    background-color: rgb(228, 226, 226) ;
+    margin-right: 6px;
+    border: 2px solid rgba(223, 223, 223, 0.918); 
+    border-radius: 10px;
+
+}
+.mainbody .subbody .costumerassurance .parts:nth-child(1){
+    margin-left:20px;
+
+}
+
+
+.mainbody .subbody .costumerassurance .parts:hover{
+    width:  calc( 25% - 19px);
+    height: 102%;
+    margin-top: -1px;
+
+}
+
+
+
+.mainbody .subbody .costumerassurance .parts img{
+         
+    width: 40%;
+    height: auto;
+
+}
+
+.mainbody .subbody .costumerassurance .parts .text h1{
+
+        font-size: 20px;
+        font-weight: 750;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: rgb(68, 67, 67);
+        padding-bottom: 8px;
+        letter-spacing: 0.5px;
+        padding-top: 16px;
+
+}
+
+.mainbody .subbody .costumerassurance .parts .text .text1{
+            padding-left: 7px;
+}
+
+
+.mainbody .subbody .costumerassurance .parts .text .text3{
+    padding-right: 5px;
+}
+.mainbody .subbody .costumerassurance .parts .text .text2{
+
+    padding-left: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+
+}
+
+
+.mainbody .subbody .costumerassurance .parts .text h2{
+
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(136, 133, 133);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+
+
+}
+
+/*CATEGORY SLIDER*/
+
+.mainbody .subbody .categoryslider{
+    /* border: 1px solid rgb(179, 255, 0);    */
+     width: calc(100% - 80px);  
+     height: 320px; 
+     position: relative;
+     margin-top: 50px;
+     margin-left: 55px;  
+    overflow: hidden;
+}
+
+.mainbody .subbody .categoryslider .images{
+    width: calc(100% - 30px);  
+    height: 100%; 
+    margin-left: 5px;  
+
+}
+
+.mainbody .subbody .categoryslider .images .s_items{
+
+    /*over here width doesnot matter as they will have width to fit 3 images(as mentioned in script below) in a frame. 
+    
+    width:40%;
+    */
+    height: 100%; 
+     position: relative;
+     margin-left: 5px; 
+     margin-right: 5px; 
+     border-radius: 10px;
+     
+}
+
+
+.mainbody .subbody .categoryslider .images .s_items a img{
+    width: 100%;
+    height: calc(320px - 70px);
+    border-radius: 10px;
+    padding-top: 0px;
+    cursor: pointer;
+
+
+
+}
+.mainbody .subbody .categoryslider .images .s_items a button{
+    width: 100%;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+padding-bottom: 10px;
+padding-top: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(29, 28, 28);
+text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+border: none;
+cursor: pointer;
+}
+
+.mainbody .subbody .categoryslider .images .s_items a button:focus{
+outline: none;
+}
+
+.mainbody .subbody .categoryslider .next{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 60px);
+    right: 28px;
+    color: rgb(201, 200, 200);
+    font-size: 47px;
+    font-weight: 800;
+    cursor: pointer;
+    user-select: none;
+
+
+
+}
+.mainbody .subbody .categoryslider .prev{ 
+  
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: calc(50% - 60px);
+    left: 8px;
+    color: rgb(201, 200, 200);
+    font-size: 47px;
+    font-weight: 800;
+    user-select: none;
+   
+
+
+}
+
+
+.mainbody .subbody .categoryslider .prev:hover,
+.mainbody .subbody .categoryslider .next:hover{
+
+    color: rgb(83, 83, 83);
+    font-size: 50px;
+    top: calc(50% - 58px);
+
+}
+
+
+
+
+/*FEEDBACK*/
+
+.mainbody .subbody .feedback{
+
+
+    /* border: 1px solid blue;  */
+    width: calc(100% - 100px);
+    height: 630px; 
+    position: relative;
+    margin-top: 50px;
+    margin-left: 55px;    
+
+}
+
+.mainbody .subbody .feedback h1{
+                position: relative;
+                font-size: 55px;              
+                text-align: center;
+                padding-bottom: 10px;
+                font-weight: 800;
+                color: rgb(206, 168, 43);
+                font-family: 'Mukta', sans-serif;
+                text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+}
+
+
+
+
+/*FEEDBACK SLIDER*/
+
+.mainbody .subbody .feedback .feedbackslider{
+    position: absolute;
+    width: 100% ;
+    height: 50%;
+}
+
+.mainbody .subbody .feedback .feedbackslider .slider1{
+        width: calc(30% - 0px) ;
+        height: 100%;
+        float: left;
+        animation:feedbackslider1 20s infinite linear ;
+        background-image: url('Database/feedback_slider/googlereview.png');
+        background-size: 100% 100%;
+        transition: all 1s linear;
+
+
+
+}
+.mainbody .subbody .feedback .feedbackslider .slider2{
+   width: calc(40% - 0px) ;
+   height: 100%;
+   float: left;
+   animation:feedbackslider2 40s infinite linear ;
+   transition: all 1s linear;
+
+
+}
+.mainbody .subbody .feedback .feedbackslider .slider3{
+   width: calc(30% - 0px) ;
+   height: 100%;
+   float: left;
+   animation:feedbackslider3 30s infinite linear ;
+   animation-delay: 5s;
+   background-image: url("Database/feedback_slider/review4.png");
+   background-size: 100% 100%;
+
+
+}
+
+
+@keyframes feedbackslider1{
+
+
+    0%{
+        background-image: url('Database/images/feedback_slider/googlereview.png');
+        background-size: 100% 100%;
+    }
+
+    10%{
+        background-image: url('Database/images/feedback_slider/googlereview.png');
+        background-size: 100% 100%;
+
+    }
+
+    12%{
+        background-image: url('Database/images/feedback_slider/review1.jpg');
+        background-size: 100% 100%;
+
+    }
+
+    22%{
+        background-image: url('Database/images/feedback_slider/review1.jpg');
+        background-size: 100% 100%;
+
+    }
+
+    24%{
+        background-image: url('Database/images/feedback_slider/review11.jpg');
+        background-size: 100% 100%;
+    }
+
+    34%{
+        background-image: url('Database/images/feedback_slider/review11.jpg');
+        background-size: 100% 100%;
+    }
+
+    36%{
+        background-image: url('Database/images/feedback_slider/review13.png');
+        background-size: 100% 100%;
+    }
+
+    
+    46%{
+        background-image: url('Database/images/feedback_slider/review13.png');
+        background-size: 100% 100%;
+    }
+    
+    48%{
+       background-image: url('Database/images/feedback_slider/review3.png');
+        background-size: 100% 100%;
+    }
+    
+    58%{
+        background-image: url('Database/images/feedback_slider/review3.png');
+        background-size: 100% 100%;
+    }
+    
+    60%{
+        background-image: url('Database/images/feedback_slider/review12.png');
+        background-size: 100% 100%;
+    }
+
+    
+    70%{
+        background-image: url('Database/images/feedback_slider/review12.png');
+        background-size: 100% 100%;
+    }
+    
+    72%{
+        background-image: url('Database/images/feedback_slider/review14.png');
+        background-size: 100% 100%;
+    }
+    
+    82%{
+        background-image: url('Database/images/feedback_slider/review14.png');
+        background-size: 100% 100%;
+    }
+    
+    
+    84%{
+        background-image: url('Database/images/feedback_slider/review2.png');
+        background-size: 100% 100%;
+    }
+    
+    
+    100%{
+        background-image: url('Database/images/feedback_slider/review2.png');
+        background-size: 100% 100%;
+    }
+
+}
+
+@keyframes feedbackslider2{
+
+
+    0%{
+        background-image: url('Database/images/feedback_slider/reviewfacebook.jpg');
+        background-size: 100% 100%;
+    }
+
+    10%{
+        background-image: url('Database/images/feedback_slider/reviewfacebook.jpg');
+        background-size: 100% 100%;
+    }
+
+    12%{
+        background-image: url('Database/images/feedback_slider/review8.jpg');
+        background-size: 100% 100%;
+    }
+
+    22%{
+        background-image: url('Database/images/feedback_slider/review8.jpg');
+        background-size: 100% 100%;
+    }
+
+    24%{
+        background-image: url('Database/images/feedback_slider/review9.png');
+        background-size: 100% 100%;
+    }
+
+    34%{
+        background-image: url('Database/images/feedback_slider/review9.png');
+        background-size: 100% 100%;
+    }
+
+    36%{
+        background-image: url('Database/images/feedback_slider/feedback1.jpg');
+        background-size: 100% 100%;
+    }
+
+    
+    46%{
+        background-image: url('Database/images/feedback_slider/feedback1.jpg');
+        background-size: 100% 100%;
+    }
+    
+    48%{
+        background-image: url('Database/images/feedback_slider/feedback3.jpg');
+        background-size: 100% 100%;
+    }
+    
+    58%{
+        background-image: url('Database/images/feedback_slider/feedback3.jpg');
+        background-size: 100% 100%;
+    }
+    
+    60%{
+        background-image: url('Database/images/feedback_slider/feedback4.jpg');
+        background-size: 100% 100%;
+    }
+
+    
+    70%{
+        background-image: url('Database/images/feedback_slider/feedback4.jpg');
+        background-size: 100% 100%;
+    }
+    
+    72%{
+        background-image: url('Database/images/feedback_slider/review3.png');
+        background-size: 100% 100%;
+    }
+    
+    82%{
+        background-image: url('Database/images/feedback_slider/review3.png');
+        background-size: 100% 100%;
+    }
+    
+    
+    84%{
+        background-image: url('Database/images/feedback_slider/feedback1.jpg');
+        background-size: 100% 100%;
+    }
+    
+    
+    100%{
+        background-image: url('Database/images/feedback_slider/feedback1.jpg');
+        background-size: 100% 100%;
+    }
+
+}
+
+@keyframes feedbackslider3{
+
+
+    0%{
+        background-image: url('Database/images/Extras/news5.jpg');
+        background-size: 100% 100%;
+    }
+
+    10%{
+        background-image: url('Database/images/Extras/news5.jpg');
+        background-size: 100% 100%;
+    }
+
+    12%{
+        background-image: url('Database/images/Extras/news1.png');
+        background-size: 100% 100%;
+    }
+
+    22%{
+        background-image: url('Database/images/Extras/news1.png');
+        background-size: 100% 100%;
+    }
+
+    24%{
+        background-image: url('Database/images/Extras/news2.jpg');
+        background-size: 100% 100%;
+    }
+
+    34%{
+        background-image: url('Database/images/Extras/news2.jpg');
+        background-size: 100% 100%;
+    }
+
+    36%{
+        background-image: url('Database/images/Extras/news3.jpg');
+        background-size: 100% 100%;
+    }
+
+    
+    46%{
+        background-image: url('Database/images/Extras/news3.jpg');
+        background-size: 100% 100%;
+    }
+    
+    48%{
+        background-image: url('Database/images/Extras/news7.jpg');
+        background-size: 100% 100%;
+    }
+    
+    58%{
+        background-image: url('Database/images/Extras/news7.jpg');
+        background-size: 100% 100%;
+    }
+    
+    60%{
+        background-image: url('Database/images/Extras/news8.jpg');
+        background-size: 100% 100%;
+    }
+
+    
+    70%{
+        background-image: url('Database/images/Extras/news8.jpg');
+        background-size: 100% 100%;
+    }
+    
+    72%{
+        background-image: url('Database/images/Extras/news9.jpg');
+        background-size: 100% 100%;
+    }
+    
+    82%{
+        background-image: url('Database/images/Extras/news9.jpg');
+        background-size: 100% 100%;
+    }
+    
+    
+    84%{
+        background-image: url('Database/images/Extras/newyear.jpg');
+        background-size: 100% 100%;
+    }
+    
+    
+    100%{
+        background-image: url('Database/images/Extras/newyear.jpg');
+        background-size: 100% 100%;
+    }
+
+}
+
+
+
+/*FEEDBACK COMMENTS*/
+
+.mainbody .subbody .feedback .feedbackcomments{
+    position: absolute;
+    top: 63%;
+    padding-top: 10px;
+    width: 100%;
+    height: calc(50% - 10px); /*minus the margin Ileft in between*/
+    display: flex;
+    float: left;
+   /* border:1px solid yellow;  */
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput{
+    
+     
+    width: 70%;
+    height: 100%;
+    
+  /*  border:1px solid orange; */
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput h2{
+             position: relative;
+             font-size: 35px;
+            font-weight: 500;
+            letter-spacing: .5px;
+          text-shadow: 1.5px 1.5px rgb(80, 67, 25);
+          font-family: 'Varela Round', sans-serif;     
+                      text-shadow: 2px 2px 5px rgba(85, 70, 23, 0.712);
+          color: rgb(50, 122, 128);
+             text-align: start;
+             padding-bottom: 15px;
+
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput  .input:focus{
+    outline: none;
+
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput  .input1{
+    position: relative;
+    width: 40%;
+    height: 10%;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color:  rgb(65, 63, 63);
+    border-radius: 10px;
+    border: 1px solid rgb(221, 218, 218);
+    background-color: rgba(233, 231, 231, 0.5);
+    box-shadow: inset 0 5px 15px rgba(184, 181, 181, 0.5);
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .input3:focus , .input1:focus,.input2:focus,
+.input3:focus,.input4:focus,.submit:focus{
+
+    outline: none;
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .input3{
+
+    position: relative;
+    width: 14%;
+    height: 10%;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color:  rgb(65, 63, 63);
+    border-radius: 10px;
+    border: 1px solid rgb(221, 218, 218);
+    background-color: rgba(233, 231, 231, 0.5);
+    box-shadow: inset 0 5px 15px rgba(184, 181, 181, 0.5);
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .input4{
+    
+    position: relative;
+    width: calc(16% - 25px);
+    height: 10%;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color:  rgb(65, 63, 63);
+    border-radius: 10px;
+    border: 1px solid rgb(221, 218, 218);
+    background-color: rgba(233, 231, 231, 0.5);
+    box-shadow: inset 0 5px 15px rgba(184, 181, 181, 0.5);
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .input2{
+
+    position: relative;
+    width: 70%;
+    height: calc(50% - 10px ) ;
+    color:  rgb(65, 63, 63);
+    border-radius: 10px;
+    border: 1px solid rgb(221, 218, 218);
+    background-color: rgba(233, 231, 231, 0.5);
+    box-shadow: inset 0 5px 15px rgba(184, 181, 181, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    resize: none;
+}
+
+
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .icons{
+
+    width: calc(40% - 5px); /*minus the padding from left of the btns*/
+    position: relative;
+    display: flex;
+    float: left;
+    padding-top: 8px;
+
+   
+
+}
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .icons .fa{
+
+padding-right: 10px;
+font-size: 18px;
+font-weight: 500;
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .icons .fa:hover{
+
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .btn{
+
+    
+    width: 60%;
+    position: relative;
+    display: flex;
+    float: left;
+    padding-top: 8px;
+    padding-left: 5px;
+    
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .btn input{
+
+    padding-right: 8px;
+    font-size: 16px;
+    font-weight: 500;
+   
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .btn input:focus{
+    outline: none;
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .btn input:hover{
+    font-weight: 600;
+    color: rgb(31, 30, 30);
+  /*  border: 1.5px solid rgb(173, 173, 172);*/
+    padding-left: 3px;
+
+
+
+
+}
+
+.mainbody .subbody .feedback .feedbackcomments .feedbackinput .btn .submit{ 
+
+    width: 20%;
+    padding-left: 8px;
+    font-weight: 500;
+    border: 1px solid rgb(201, 201, 199);
+    border-radius: 10px;
+
+   
+}
+
+
+
+/*ADVERTISE 2*/
+.mainbody .subbody .feedback .feedbackcomments  .advertise2{
+
+    width: 30%;
+    height: 100%;
+    position: relative;
+    
+}
+.mainbody .subbody .feedback .feedbackcomments .advertise2 img{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+
+/*CELEBRITY TRENDS*/
+
+.mainbody .subbody .celebs{
+
+    position: relative;
+    margin-top: 80px;
+    margin-left: 45px;
+    width:calc(100% - 110px) ;
+    height: 600px;
+    border-radius: 10px;
+    border: 1px solid rgb(221, 218, 218);
+    background-color: rgba(238, 234, 234, 0.24);
+    box-shadow: inset 5px 15px 15px rgba(204, 204, 204, 0.5);
+    border-bottom: 2px solid rgba(204, 200, 200, 0.589);
+    padding-top: 30px;
+    padding-left: 45px;
+
+    overflow: hidden;
+
+}
+
+.mainbody .subbody .celebs .column1{
+    width: 29%;
+    height: 100%;
+    float: left;
+/*  border: 1px solid yellow; */
+
+}
+
+
+
+.mainbody .subbody .celebs .column1 section{
+                width: 100%;
+                height:50%;
+                padding-bottom: 5px;
+
+                
+}
+
+
+.mainbody .subbody .celebs .column1 section img{
+            display: block;
+        width: 80%;
+        height: 200px;
+        margin: 5px auto;
+}
+
+.mainbody .subbody .celebs .column1 section h1{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Questrial', sans-serif;    color: gray;
+    padding-left: 40px;
+    padding-right: 10px;
+
+}
+
+
+.mainbody .subbody .celebs .column2{
+    width:39%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    padding-left: 13px;
+    /* border: 1px solid violet; */
+
+}
+
+
+
+.mainbody .subbody .celebs .column2  img{
+width: 100%;
+height: 330px;
+
+}
+
+.mainbody .subbody .celebs .column2  h1{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Muli', sans-serif;
+        color: rgb(109, 108, 108);
+
+
+}
+
+.mainbody .subbody .celebs .column2 h2{
+    font-size: 18px;
+    font-family: 'Slabo 27px', serif;   
+     color: rgb(151, 150, 150);
+    padding-top :12px; 
+    font-weight: lighter;
+
+
+
+}
+
+
+
+
+.mainbody .subbody .celebs .column3{
+    width: 29%;
+    height: 100%;
+    padding-left: 13px;
+
+float: left;
+
+   /* border: 1px solid blue; */
+
+}
+
+.mainbody .subbody .celebs .column3 section{
+    width: 100%;
+    height:50%;
+}
+
+
+.mainbody .subbody .celebs .column3 section img{
+display: block;
+width: 80%;
+height: 200px;
+margin: 5px auto;
+}
+
+.mainbody .subbody .celebs .column3 section h1{
+font-size: 18px;
+font-weight: 500;
+font-family: 'Questrial', sans-serif;
+color: gray;
+padding-left: 40px;
+
+
+}
+
+
+
+
+/*TRENDY LAPTOP*/
+
+.mainbody .subbody .trendy{
+
+    position: relative;
+    margin-top: 60px;
+    margin-left: 45px;
+    width: calc(100% - 60px);
+    height: 400px;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    0 5px 15px rgba(0, 0, 0, 0.05 );
+    background-color: rgb(228, 225, 225);
+   
+   /* display: flex; */
+    float: left;
+/*Dont need it now*/
+    display: none;
+
+}
+.mainbody .subbody .trendy .trendylaptop{
+
+
+    position: relative;
+    width: 450px;
+    height: 400px;
+   /* border: 1px solid green; */
+
+}
+
+.mainbody .subbody .trendy .trendylaptop .screen{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%; 
+    height: 300px;
+    background-color: rgb(17, 16, 16);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+
+}
+
+.mainbody .subbody .trendy .trendylaptop .screen .camera{
+        position: absolute;
+        top: -14%;
+        left: 49%;
+        font-size: 60px;
+        color: rgb(73, 70, 70);
+        border-radius: 10px;
+
+
+}
+
+.mainbody .subbody .trendy .trendylaptop .screen .innerscreen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    height: calc(300px - 40px);
+    background-color:white;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 48, 48);
+    animation: news 30s infinite;
+   /* transition-property: animation ; */
+
+
+}
+
+@keyframes news{
+
+    0%{ 
+        background-image: url('news5.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    10%{ 
+        background-image: url('news5.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    12%{ 
+        background-image: url('news2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    22%{ 
+        background-image: url('news2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    24%{ 
+        background-image: url('news4.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    34%{ 
+        background-image: url('news4.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    36%{ 
+        background-image: url('news9.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    46%{ 
+        background-image: url('news9.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    48%{ 
+        background-image: url('news7.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    58%{ 
+        background-image: url('news7.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    60%{ 
+        background-image: url('news10.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    70%{ 
+        background-image: url('news10.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    72%{ 
+        background-image: url('news3.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    82%{ 
+        background-image: url('news3.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    84%{ 
+        background-image: url('news1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    94%{ 
+        background-image: url('news1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    96%{ 
+        background-image: url('news8.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    106%{ 
+        background-image: url('news8.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.mainbody .subbody .trendy .trendylaptop .bottom{
+
+    position: absolute;
+    top: 88.5%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    height:30px ;
+    background-color:rgb(29, 28, 28);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+
+
+
+.mainbody .subbody .trendy .trendytext{
+
+    display: block; 
+    position: relative;
+    width: calc(100% - 400px - 30px);
+    height: 100%;
+   /* border: 1px solid blue;*/
+
+}
+
+.mainbody .subbody .trendy .trendytext h1{
+
+        font-size: 40px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 900;
+
+        color: rgb(179, 158, 43);
+        text-shadow: 1.5px 1px 3px rgb(63, 56, 8);
+       padding-top: 30px;
+       padding-bottom: 15px;
+
+}
+
+.mainbody .subbody .trendy .trendytext p{
+
+
+            color: rgb(71, 70, 70);
+            font-size: 17px;
+            font-family: cursive;
+            font-weight: 500;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 15px;
+     
+
+}
+
+/*CAROUSEL SLIDER*/
+
+.wheelslider{
+    display: flow-root; /*this helps while dealing with float in children*/
+    height: fit-content;
+    width: calc(100% - 130px);
+    position: relative;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  /*  border: 1px solid black;   */
+  border: 1px solid rgb(209, 207, 207);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(107, 107, 107, 0.322),  inset 0 5px 15px rgba(228, 227, 227, 0.575),
+  inset 0 3px 5px rgba(182, 180, 180, 0.336),
+  -1px 0px 5px rgba(214, 214, 214, 0.315);
+  background-color: rgb(241, 237, 237);
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+
+}
+
+/* ALTERNATIVE TO DISPLAY flow-root
+
+.wheelslider::after{
+content: '';
+clear: both;
+display: block;
+} */
+
+.wheelslider h1{
+    width: 100%;
+    height: 40px;
+   /* border: 1px solid orange;  */
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(29, 28, 28);
+    text-shadow: 0 0 3px rgba(88, 88, 88, 0.527);
+
+}
+
+
+.wheelslider .carousel_slider{
+
+    height: 410px;
+    width: 850px;  /*for plugin we cannot give in %*/
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    /* border: 1px solid orange;  */
+     overflow: hidden;
+
+     float: left;
+
+}
+
+
+.wheelslider .carousel_slider .wheelitems{
+    width: 450px;
+    height: 380px; 
+
+}
+
+.wheelslider .carousel_slider .wheelitems a img{
+    width: 450px;
+    height: 380px; 
+     display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+
+}
+
+.wheelslider .text{
+
+    width: calc(100% - 880px );
+    float: left;
+    padding-bottom: 20px;
+
+}
+
+.wheelslider .text h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(29, 28, 28);
+    text-shadow: 0 0 3px rgba(88, 88, 88, 0.37);
+    padding-top: 20px;
+}
+
+.wheelslider .text p{
+    color: rgb(100, 99, 99);
+            font-size: 17px;
+            font-family: cursive;
+            font-weight: 500;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 10px;
+     
+
+}
+
+.wheelslider .text p b,.wheelslider .text p strong{
+    color: rgb(71, 71, 71);
+    font-weight: 700;
+
+}
+.wheelslider .text p span{
+    color: rgb(104, 45, 45);
+    font-size: 18px;
+    font-weight: 700;
+
+
+
+}
+
+
+/*subscribe*/
+
+
+
+.mainbody .subbody .subscribe{
+    height: 280px;
+    width: 80%;
+    position: relative;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+   /* border: 1px solid yellow;  */
+}
+
+.mainbody .subbody .subscribe h1{
+
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+                color: rgb(150, 118, 25);
+                font-family: fantasy;
+                text-shadow: 2px 2px rgb(71, 57, 11);
+                letter-spacing: 5px;
+}
+.mainbody .subbody .subscribe h2{
+
+    position: relative;
+    text-align: center;
+    color: rgb(71, 70, 70);
+            font-size: 15px;
+            font-family: cursive;
+            font-weight: 500;
+            padding-top: 5px;
+            padding-right: 8px;
+}
+
+
+.mainbody .subbody .subscribe h2 span{
+
+   
+    color: rgb(66, 65, 65);
+            font-size: 17px;
+            font-family: cursive;
+            font-weight: 600;
+
+
+}
+    
+.mainbody .subbody .subscribe h3{
+    position: relative;
+    text-align: center;
+    color: rgb(82, 80, 80);
+            font-size: 19px;
+            font-family: cursive;
+            font-weight: 500;
+            padding-top: 10px;
+
+
+}
+
+
+.mainbody .subbody .subscribe .email{
+                position: absolute;
+                top: 47%;
+                left: 34%;
+    width: 25%;
+            height: 30px;
+            border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Archivo Narrow', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+    0 5px 5px rgba(5, 5, 5, 0.521);
+    padding-left: 20px;
+
+        background-color: rgba(228, 225, 225, 0.479);
+}
+
+.mainbody .subbody .subscribe button{
+
+    position: absolute;
+    top: 47%;
+    left: 61.5%;
+    z-index: 2;
+    width: 7%;
+height: 30px;
+border-radius: 10px;
+border: none;
+font-size: 15px;
+font-family: 'Archivo Narrow', sans-serif;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05 ),  inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+inset 0 5px 15px rgba(0, 0, 0, 0.05 ),
+0 5px 5px rgba(5, 5, 5, 0.705);
+padding-left: 5px;
+font-family: 'Archivo Narrow', sans-serif;
+font-size: 12px;
+text-transform: uppercase;
+background-color: rgb(223, 219, 219);
+padding-top: 3px;
+
+    
+}
+
+.mainbody .subbody .subscribe button:hover{
+
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgb(204, 198, 198);
+}
+
+
+.mainbody .subbody .subscribe h4{
+
+    position: absolute;
+    top: 160px;
+    left: 41%;
+    color: rgb(82, 80, 80);
+            font-size: 16px;
+            font-family: cursive;
+            font-weight: 500;
+            padding-top: 10px;
+
+}
+
+
+.mainbody .subbody .subscribe .checkbox{
+
+    position: absolute;
+    top: 177px;
+    left: 39%;
+
+
+}
+
+.mainbody .subbody .subscribe h5{
+
+    position: absolute;
+    top: 198px;
+    left: 39%;
+    color: rgb(82, 80, 80);
+            font-size: 16px;
+            font-family: cursive;
+            font-weight: 500;
+            padding-top: 10px;
+            text-decoration: underline ;
+
+
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer{
+    display: block;
+    width: 100%;
+    height:370px;
+    margin-top: 70px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+
+}  
+
+
+.footer .innerfooter{
+    width:100vw;
+    margin: 0 auto;
+    height: 100%;
+
+}
+.footer .innerfooter .logo{
+    display: block;
+    width: 25%;
+    height: 100%;
+    float: left;
+   
+    margin-top: 20px;
+}
+
+.footer .innerfooter .logo img{
+   padding-top: 8px;
+   padding-left: 35px;
+
+    width: 250px;
+    height: 190px;
+    
+
+}
+.footer .innerfooter .logo .address{
+padding-left: 35px;
+padding-top: 15px;
+font-size: 18px;
+}
+
+.footer .innerfooter .logo .address span{
+    color: rgb(209, 203, 203);
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+
+.footer .innerfooter .info{
+   position: relative;
+    height:fit-content;
+   width: calc(15% - 5px);
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+   /* border: 1px solid red;  */
+    
+}
+.footer .innerfooter .info form{
+    padding-top: 10px;
+    
+
+}
+
+
+.footer .innerfooter .info .contactinput{
+
+    border: none;
+    border-radius: 8px;
+   width: 250px;
+    /* this edits the text inside them*/
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    resize: none;
+
+}
+
+.footer .innerfooter .info .file{
+    font-size: 13px;
+    color: white;
+    border: none;
+}
+
+.footer .innerfooter .info h1{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(235, 227, 160);
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 0.5px;
+    flex-wrap: nowrap;
+
+
+}
+
+.footer .innerfooter .info h1 span{ /*i did this only because the other blocks were moving due to hover padding 
+    thus making them smaller than the fixed upper letter so it doesnot move now.*/
+    color: black;     font-family: 'Mukta', sans-serif;
+
+}
+
+
+.footer .innerfooter .info h2{
+    display: block; 
+    font-size: 17px;
+    padding-bottom: 5px;
+    color: wheat;
+    font-family: 'Mukta', sans-serif;
+
+
+}
+.footer .innerfooter .info a{
+    display: block;/*untill we made this block the padding effect wasnt working*/
+   padding-bottom: 2px;
+    font-size: 18px;
+    color: rgb(215, 243, 238);
+    font-family: 'Mukta', sans-serif;
+
+    
+}
+.footer .innerfooter .info a:hover{
+    padding-left: 2px;
+    font-size:20px; 
+    font-weight :500;
+    color: rgb(221, 179, 101);
+
+
+}
+/* Dont know why after using this all the link in footer changes to cyan evem if not visited 
+may be given no link address.
+
+.footer .innerfooter .info a:visited{
+    text-decoration:underline cyan ;
+    color: cyan;
+
+}
+
+.footer .innerfooter .info .submit{
+  float: right;
+
+}
+
+*/
+
+.footer .copyright{
+position: absolute; /*see this is the trick using position absolute and main footer as relative so it a
+djust accordingly also note that always bottom does not work so try it by top only  */
+top: 92%;
+font-family: 'Mukta', sans-serif;
+font-size: 15px;
+background-color: rgba(20, 20, 20, 0.726);
+color: rgb(221, 220, 220);
+text-align: center;
+font-weight: 400;
+width: 100%;
+height: 20px;
+padding-top: 3.5px;
+padding-bottom: 5px;
+
+
+}
+
+.footer .copyright .fa{
+    padding-right: 5px;
+    
+}
+
+.footer .footerpayment{
+    
+    width: 100%;
+    position: absolute;
+    top: 76%;     /*see this is the trick using position absolute and main footer as relative so it a
+    djust accordingly also note that always bottom does not work so try it by top only  */
+    text-align: center;
+}
+
+
+.footer .footerpayment img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    
+}
+
+/*Since not happy with sizes of google pay and mastercard so gave 
+them a name and editting it seperately. */
+.footer .footerpayment .Payment1{
+
+    width: 60px;
+}
+
+
+.footer .footerpayment .Payment2{
+
+    width: 70px;
+}
+
